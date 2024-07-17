@@ -15,6 +15,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { scrollToTop } from "../../constants/scrollToTop";
 import { partnerBrands } from "../../constants/partnerBrands";
 import { useToast } from "@chakra-ui/react";
+import ServiceCard from "./serviceCard";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ const HomePage = () => {
   };
   return (
     <div className=" w-full overflow-hidden">
-      <div className="  flex bg-[url('/hero-bg-image.jpg')] pt-36 pb-20 bg-top bg-no-repeat bg-cover  ">
+      <div className="  flex bg-[url('https://signaturefoundation.com/upload/slide/1.jpg')] pt-36 pb-20 bg-top bg-no-repeat bg-cover  ">
         <motion.div
           initial="initial"
           whileInView="animate"
@@ -52,18 +53,17 @@ const HomePage = () => {
         >
           <motion.h1
             variants={animationVariants.fadeLeft}
-            className="text-6xl max-lg:mx-auto font-semibold max-sm:text-4xl max-w-lg "
+            className="text-6xl max-lg:mx-auto  font-semibold max-sm:text-4xl max-w-lg "
           >
-            Discover Most Suitable Property
+            Mental Wellness Haven
           </motion.h1>
           <motion.p
             variants={animationVariants.fadeLeft}
             className="text-xl max-lg:mx-auto max-w-md  "
           >
-            Our mission is to engage in issues that are of concern to
-            individuals
+            A Caring Environment for Mental Health Recovery
           </motion.p>
-          <motion.div
+          {/* <motion.div
             variants={animationVariants.fadeLeft}
             id="search-inp"
             className="max-w-xl max-lg:mx-auto max-lg:w-full relative"
@@ -89,7 +89,7 @@ const HomePage = () => {
               styles={{ top: 9.5 }}
               onClick={handleSearch}
             />
-          </motion.div>
+          </motion.div> */}
           <motion.div
             variants={animationVariants.fadeLeft}
             className="flex max-lg:flex-col max-lg:items-center gap-10 w-full justify-between items-end mt-4"
@@ -137,8 +137,8 @@ const HomePage = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <h2 className="text-5xl max-md:text-4xl font-bold title-font">
-                We build quality real estate projects
-                <span className=" text-red-500 title-font "> since 1998</span>
+                Bighearted Care supporting you to live each day to the full.{" "}
+                {/* <span className=" text-red-500 title-font "> since 1998</span> */}
               </h2>
             </motion.div>
           </div>
@@ -181,12 +181,12 @@ const HomePage = () => {
             className="w-1/3 max-lg:w-full max-lg:text-center flex flex-col gap-2 items-start max-lg:items-center"
           >
             <h2 className="text-5xl max-md:text-4xl font-bold title-font">
-              What we do
+              Love, Care & Joy{" "}
             </h2>
             <p className="text-xl">
-              Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-              urna in elit amet blandit enim lacinia. Tellus leo felis et vel
-              eget maecenas.
+              Whatever your needs may be, our proactive and friendly team are
+              always on hand to help. Live purposeful and fulfilling days with a
+              supportive arm around your shoulder.
             </p>
             <Link onClick={scrollToTop} to={"/about"}>
               <button
@@ -207,20 +207,18 @@ const HomePage = () => {
           >
             <div className="flex flex-col gap-7 ">
               <WhatWeDoCard
-                iconSrc={"/icons/reliability.png"}
-                iconAlt={"reliability"}
-                title={"Reliability"}
-                desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
+                iconSrc={
+                  "https://www.hallmarkcarehomes.co.uk/app/uploads/2023/08/People-holding-hands.svg"
                 }
+                iconAlt={"reliability"}
+                title={"Relationship-Centred"}
+                desc={"You & your loved ones at the heart of everything we do"}
               />
               <WhatWeDoCard
                 iconSrc={"/icons/communication.png"}
                 iconAlt={"communication"}
-                title={"communication"}
-                desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
-                }
+                title={"Homes for Living"}
+                desc={"Everything you need to spend your days, your way"}
               />
             </div>
             <div className="flex flex-col gap-7">
@@ -231,10 +229,8 @@ const HomePage = () => {
               <WhatWeDoCard
                 iconSrc={"/icons/quality-first.png"}
                 iconAlt={"quality-first"}
-                title={"Quality First"}
-                desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
-                }
+                title={"Loved by Residents"}
+                desc={"With a 9.8/10 review score on carehome.co.uk"}
               />
               <div
                 style={{ height: 130 }}
@@ -243,7 +239,7 @@ const HomePage = () => {
             </div>
           </motion.div>
         </div>
-        <div style={{ maxWidth: 1200 }} className="p-10 max-md:px-5 mx-auto">
+        {/* <div style={{ maxWidth: 1200 }} className="p-10 max-md:px-5 mx-auto">
           <motion.h2
             initial="initial"
             whileInView="animate"
@@ -315,6 +311,50 @@ const HomePage = () => {
               </div>
             </div>
           </div>
+        </div> */}
+
+<div
+          style={{ maxWidth: 1200 }}
+          className="mx-auto destination-section p-10 max-md:px-5  pb-28"
+        >
+          <motion.h1
+            initial="initial"
+            whileInView="animate"
+            variants={animationVariants.fadeIn}
+            viewport={{ once: true, amount: 0.2 }}
+            className="text-5xl max-md:text-4xl font-semibold text-center  px-2"
+          >
+Our Care.         </motion.h1>
+          <div className="grid grid-cols-3 grid-rows-1 max-lg:grid-cols-2 max-lg:grid-rows-2 max-sm:grid-cols-1 max-sm:grid-rows-4 gap-4 relative mt-10 max-sm:mt-8">
+            <img
+              src="/cards-corner.png"
+              className="absolute -left-10 -bottom-10 max-xl:hidden"
+              alt=""
+            />
+            
+                  <ServiceCard
+                    key={1}
+                    src={'https://files.cdn-files-a.com/uploads/9435802/400_668d11796fd24.jpg'}
+                    title={'Community Support'}
+                    desc={'Our supportive community promotes social interaction, peer support, and a sense of belonging, empowering residents on their recovery journey.'}
+                    // href={}
+                  />
+                    <ServiceCard
+                    key={2}
+                    src={'https://files.cdn-files-a.com/uploads/9435802/400_668d1177c93bc.jpg'}
+                    title={'Therapy Sessions'}
+                    desc={'We offer a variety of therapy sessions, including cognitive-behavioral therapy, group therapy, and art therapy, aimed at nurturing mental well-being.'}
+                    // href={}
+                  />
+                    <ServiceCard
+                    key={3}
+                    src={'https://static1.s123-cdn-static-a.com/uploads/2031/400_57d14bd1c7c33.jpg'}
+                    title={'Personalized Care Plans'}
+                    desc={'Our team creates individualized care plans to meet the unique needs of each resident, ensuring tailored support and comprehensive care.'}
+                    // href={}
+                  />
+              
+          </div>
         </div>
       </div>
       {/* what we do section end */}
@@ -336,14 +376,13 @@ const HomePage = () => {
               variants={animationVariants.fadeLeft}
               className="text-5xl max-md:text-4xl font-semibold"
             >
-              We use Real Estate to show our appreciation of the world.
+             Join our caring Community.
             </motion.h1>
             <motion.p
               variants={animationVariants.fadeLeft}
               className="text-2xl"
             >
-              We provide equity and debt capital globally to back projects that
-              make an impact.
+             Your Journey to Healing Starts Here
             </motion.p>
             <motion.div
               variants={animationVariants.fadeLeft}
@@ -354,7 +393,7 @@ const HomePage = () => {
                   8
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in real estate
+                  Years of seccessful experience in caring
                 </p>
               </div>
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
@@ -362,7 +401,7 @@ const HomePage = () => {
                   8
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in real estate
+                  Years of seccessful experience in caring
                 </p>
               </div>
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
@@ -370,7 +409,7 @@ const HomePage = () => {
                   8
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in real estate
+                  Years of seccessful experience in caring
                 </p>
               </div>
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
@@ -378,7 +417,7 @@ const HomePage = () => {
                   8
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in real estate
+                  Years of seccessful experience in caring
                 </p>
               </div>
             </motion.div>
@@ -395,7 +434,7 @@ const HomePage = () => {
           <div className="w-full max-lg:w-full h-full max-sm:max-h-[500px] ">
             <div className=" h-full w-full relative overflow-hidden rounded-lg">
               <img
-                src="/appriciation-section-image.jpg"
+                src="https://files.cdn-files-a.com/uploads/9435802/2000_668d1175c2912.jpg"
                 className="absolute w-full h-full object-cover object-center "
                 alt=""
               />
@@ -424,8 +463,7 @@ const HomePage = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="text-5xl max-md:text-4xl font-semibold text-center  px-2"
           >
-            Destinations We Love The Most
-          </motion.h1>
+Branches         </motion.h1>
           <div className="grid grid-cols-4 grid-rows-1 max-lg:grid-cols-2 max-lg:grid-rows-2 max-sm:grid-cols-1 max-sm:grid-rows-4 gap-4 relative mt-10 max-sm:mt-8">
             <img
               src="/cards-corner.png"
@@ -466,9 +504,9 @@ const HomePage = () => {
               variants={animationVariants.zoomIn}
             >
               <ReviewCard
-                imgSrc={"/reviews/jane-cooper.jpg"}
-                title={"Jane Cooper"}
-                from={"Real Estate"}
+                imgSrc={"	https://files.cdn-files-a.com/uploads/9435802/400_668d117bb8ca7.jpg"}
+                title={"Jane Smith"}
+                from={"Resident"}
               />
             </motion.div>
             <motion.div
@@ -476,9 +514,9 @@ const HomePage = () => {
               variants={animationVariants.zoomIn}
             >
               <ReviewCard
-                imgSrc={"/reviews/robert-fox.jpg"}
-                title={"Robert Fox"}
-                from={"Creative Director"}
+                imgSrc={"	https://static1.s123-cdn-static-a.com/ready_uploads/media/2692690/400_5e0be51c56b84.jpg"}
+                title={"Emily Johnson"}
+                from={"Resident"}
               />
             </motion.div>
             <motion.div
@@ -486,9 +524,9 @@ const HomePage = () => {
               variants={animationVariants.zoomIn}
             >
               <ReviewCard
-                imgSrc={"/reviews/marvin-mckinney.jpg"}
-                title={"Marvin Mckinney"}
-                from={"CEO of Bimetrix"}
+                imgSrc={"	https://files.cdn-files-a.com/uploads/9435802/400_668d117ad72a0.jpg"}
+                title={"John Doe"}
+                from={"Resident"}
               />
             </motion.div>
           </motion.div>
@@ -500,7 +538,7 @@ const HomePage = () => {
             className="w-2/4 max-md:w-full max-md:text-center flex flex-col gap-8"
           >
             <h1 className="text-5xl max-md:text-4xl font-semibold">
-              Why do people love homyz
+              Why do people love Rosmanor
             </h1>
             <div>
               <Carousel />
@@ -515,7 +553,7 @@ const HomePage = () => {
           style={{ maxWidth: 1200 }}
           className=" mx-auto flex max-md:flex-col justify-center items-center gap-10 p-10 max-md:px-5  "
         >
-          <motion.div
+          {/* <motion.div
             initial="initial"
             whileInView="animate"
             variants={animationVariants.fadeIn}
@@ -532,7 +570,7 @@ const HomePage = () => {
                 />
               );
             })}
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
       {/* partner brand section end */}

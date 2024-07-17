@@ -29,22 +29,16 @@ export default function Carousel() {
         className="mySwiper text-xl"
       >
         <SwiperSlide>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit neque
-          natus asperiores unde, nulla sequi, nobis saepe dicta aut maiores quia
-          quos sapiente dolores consequuntur perspiciatis repellendus quis
-          necessitatibus quas.
+          "This place is truly a haven. The therapies and personalized plans have
+          made a huge difference in my mental health journey."
         </SwiperSlide>
         <SwiperSlide>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit neque
-          natus asperiores unde, nulla sequi, nobis saepe dicta aut maiores quia
-          quos sapiente dolores consequuntur perspiciatis repellendus quis
-          necessitatibus quas.
+         " The compassionate care and support I've received at Mental Wellness
+          Haven have been instrumental in my recovery."
         </SwiperSlide>
         <SwiperSlide>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit neque
-          natus asperiores unde, nulla sequi, nobis saepe dicta aut maiores quia
-          quos sapiente dolores consequuntur perspiciatis repellendus quis
-          necessitatibus quas.
+         " The community support here is amazing. I feel like I belong and am
+          making real progress toward better mental health."
         </SwiperSlide>
 
         <div className="slider-controler flex max-md:justify-center  gap-3  mt-16">
