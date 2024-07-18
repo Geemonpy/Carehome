@@ -173,9 +173,14 @@ const ContactPage = () => {
                 <div className="bg-red-500 w-[60px] h-[58px] rounded-md text-xl flex gap-4 justify-center items-center">
                   <FaEnvelope className="text-white" />
                 </div>
-                <h2 className="title-font font-semibold ">Services</h2>
+                <h2 className="title-font font-semibold ">
+                  Personalized Care Plans
+                </h2>
               </div>
-              <p>Neque porro quisquam est, qui dolorem ipsum.</p>
+              <p>
+                Each resident receives a customized care plan tailored to their
+                unique needs, ensuring they receive the best possible support.
+              </p>
             </motion.div>
             <motion.div
               variants={animationVariants.fadeUp}
@@ -185,9 +190,14 @@ const ContactPage = () => {
                 <div className="bg-red-500 w-[60px] h-[58px] rounded-md text-xl flex gap-4 justify-center items-center">
                   <FaCoins className="text-white" />
                 </div>
-                <h2 className="title-font font-semibold ">Pricing</h2>
+                <h2 className="title-font font-semibold ">
+                  24/7 Professional Support
+                </h2>
               </div>
-              <p>Neque porro quisquam est, qui dolorem ipsum.</p>
+              <p>
+                Our team of experienced professionals is available around the
+                clock to provide continuous care and support.
+              </p>
             </motion.div>
             <motion.div
               variants={animationVariants.fadeUp}
@@ -197,9 +207,15 @@ const ContactPage = () => {
                 <div className="bg-red-500 w-[60px] h-[58px] rounded-md text-xl flex gap-4 justify-center items-center">
                   <FaMobileAlt className="text-white" />
                 </div>
-                <h2 className="title-font font-semibold ">Support</h2>
+                <h2 className="title-font font-semibold ">
+                  Family Involvement
+                </h2>
               </div>
-              <p>Neque porro quisquam est, qui dolorem ipsum.</p>
+              <p>
+                We believe in the importance of family support and offer regular
+                family counseling sessions and visiting hours to keep loved ones
+                involved
+              </p>
             </motion.div>
           </motion.div>
         </div>
@@ -338,9 +354,11 @@ const ContactPage = () => {
             </h1>
           </div>
           <p className="text-xl">
-            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-            impedit quo minus id quod maxime placeat facere possimus, omnis
-            voluptas assumenda est, omnis dolor repellendus.
+            Feel free to reach out to us at Rosemanor with any questions or
+            inquiries. We value your feedback and are here to assist you in any
+            way we can. Contact us via phone, email, or visit us in person. We
+            look forward to hearing from you and supporting your journey to
+            mental wellness.
           </p>
           <div className="flex flex-col gap-3">
             <div className="flex  gap-3 text-xl items-center">
@@ -386,12 +404,11 @@ const ContactPage = () => {
                 className="max-w-xl max-lg:max-w-lg max-sm:w-full text-center"
               >
                 <h1 className="text-[46px] max-lg:text-4xl max-sm:text-[34px] max-[500px]:text-3xl leading-tight font-semibold">
-                  Whatever you are, you
-                  <br /> will definitely get a place
+                Caring for Your 
+                  <br /> Mental Well-being
                 </h1>
                 <p className="text-xl mt-3">
-                  We provide equity and debt capital globally to back projects
-                  that make an impact.
+                Our dedicated team is committed to caring for your mental well-being with utmost compassion and expertise.
                 </p>
               </motion.div>
             </div>
@@ -437,7 +454,7 @@ const ContactPage = () => {
 
       {/* what we do section start */}
       <div className="bg-gray-100">
-      <div
+        <div
           style={{ maxWidth: 1200 }}
           className=" mx-auto flex gap-5 justify-between items-start p-10 py-28 max-md:py-16 max-md:px-5 max-lg:flex-col max-lg:items-center  max-lg:gap-12"
         >

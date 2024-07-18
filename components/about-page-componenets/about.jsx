@@ -10,11 +10,13 @@ import Carousel from "../home-page-components/carousel";
 import PartnerBrandCard from "../home-page-components/partnerBrandCard";
 import { partnerBrands } from "../../constants/partnerBrands";
 import "./about.css";
-
+import aboutImg1 from "../../public/images/about1.jpeg";
 const AboutPage = () => {
+  console.log("an", aboutImg1);
   return (
     <>
-      <div className="bg-[url(https://www.careuk.com/getattachment/6869b9ed-3707-4886-ad23-c9281850b83b/AHW_8190-Edit.jpg?variant=HeroImageDesktopVariantDefinition)] bg-fixed bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24 ">
+      <div className="bg-[url(aboutImg1)] bg-fixed bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24"         style={{ backgroundImage: `url(${aboutImg1})` }}
+      >
         <motion.div
           initial="initial"
           whileInView="animate"
@@ -26,8 +28,7 @@ const AboutPage = () => {
           <div className="text-white flex flex-col gap-8 max-md:items-center max-md:text-center">
             <h1 className="text-5xl font-bold">Who We Are</h1>
             <p className="text-xl max-w-md">
-              Our mission is to engage in issues that are of concern to
-              individuals
+            We provide a compassionate environment where minds are nurtured, and hearts are healed.
             </p>
           </div>
           <div className="flex gap-12 max-sm:text-center text-white">
@@ -301,7 +302,7 @@ const AboutPage = () => {
 
       {/* appreciation section start */}
       <div className="bg-white">
-      <div
+        <div
           style={{ maxWidth: 1200 }}
           className="p-10 max-md:px-5 py-28 mx-auto grid grid-cols-2 grid-rows-1 gap-20 max-lg:grid-cols-1 max-lg:grid-rows-2 "
         >
@@ -316,13 +317,13 @@ const AboutPage = () => {
               variants={animationVariants.fadeLeft}
               className="text-5xl max-md:text-4xl font-semibold"
             >
-             Join our caring Community.
+              Join our caring Community.
             </motion.h1>
             <motion.p
               variants={animationVariants.fadeLeft}
               className="text-2xl"
             >
-             Your Journey to Healing Starts Here
+              Your Journey to Healing Starts Here
             </motion.p>
             <motion.div
               variants={animationVariants.fadeLeft}
@@ -487,7 +488,7 @@ const AboutPage = () => {
       {/* appreciation section end */}
       {/* review section start */}
       <div className="bg-gray-100">
-      <div
+        <div
           style={{ maxWidth: 1200 }}
           className=" mx-auto flex max-md:flex-col justify-center items-center gap-16 p-10 max-md:px-5 py-28 "
         >
@@ -503,7 +504,9 @@ const AboutPage = () => {
               variants={animationVariants.zoomIn}
             >
               <ReviewCard
-                imgSrc={"	https://files.cdn-files-a.com/uploads/9435802/400_668d117bb8ca7.jpg"}
+                imgSrc={
+                  "	https://files.cdn-files-a.com/uploads/9435802/400_668d117bb8ca7.jpg"
+                }
                 title={"Jane Smith"}
                 from={"Resident"}
               />
@@ -513,7 +516,9 @@ const AboutPage = () => {
               variants={animationVariants.zoomIn}
             >
               <ReviewCard
-                imgSrc={"	https://static1.s123-cdn-static-a.com/ready_uploads/media/2692690/400_5e0be51c56b84.jpg"}
+                imgSrc={
+                  "	https://static1.s123-cdn-static-a.com/ready_uploads/media/2692690/400_5e0be51c56b84.jpg"
+                }
                 title={"Emily Johnson"}
                 from={"Resident"}
               />
@@ -523,7 +528,9 @@ const AboutPage = () => {
               variants={animationVariants.zoomIn}
             >
               <ReviewCard
-                imgSrc={"	https://files.cdn-files-a.com/uploads/9435802/400_668d117ad72a0.jpg"}
+                imgSrc={
+                  "	https://files.cdn-files-a.com/uploads/9435802/400_668d117ad72a0.jpg"
+                }
                 title={"John Doe"}
                 from={"Resident"}
               />

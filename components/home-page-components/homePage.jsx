@@ -95,16 +95,16 @@ const HomePage = () => {
             className="flex max-lg:flex-col max-lg:items-center gap-10 w-full justify-between items-end mt-4"
           >
             <div className="flex gap-12">
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col text-black gap-4">
                 <h2 className="text-4xl title-font font-bold">19K+</h2>
-                <p className="text-lg">Premium houses</p>
+                <p className="text-lg">Premium Cares</p>
               </div>
-              <div className="flex flex-col gap-4">
+              {/* <div className="flex flex-col gap-4">
                 <h2 className="text-4xl title-font font-bold">5000+</h2>
                 <p className="text-lg">Premium houses</p>
-              </div>
+              </div> */}
             </div>
-            <div className="flex gap-12 max-sm:flex-wrap  justify-center">
+            {/* <div className="flex gap-12 max-sm:flex-wrap  justify-center">
               <div className="flex justify-start items-center gap-2">
                 <img className="w-9" src="/grafton.png" alt="img" />
                 <h2 className="text-2xl">Grafton</h2>
@@ -117,7 +117,7 @@ const HomePage = () => {
                 <img className="w-9" src="/tundratown.png" alt="img" />
                 <h2 className="text-2xl">Tundratown</h2>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </motion.div>
 
@@ -150,10 +150,10 @@ const HomePage = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <p className="text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                itaque nesciunt similique dolore illum eaque repellat eligendi
-                nemo odit fugit in, impedit ad excepturi architecto dolores
-                quaerat accusantium! Sapiente, repellendus!
+                Welcome to Mental Wellness Haven, where we nurture minds and
+                heal hearts in a compassionate, serene environment. Our
+                dedicated team is committed to supporting your mental well-being
+                with personalized care and empathy.
               </p>
               <Link onClick={scrollToTop} to={"/about"}>
                 <Button
@@ -313,7 +313,7 @@ const HomePage = () => {
           </div>
         </div> */}
 
-<div
+        <div
           style={{ maxWidth: 1200 }}
           className="mx-auto destination-section p-10 max-md:px-5  pb-28"
         >
@@ -324,36 +324,48 @@ const HomePage = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="text-5xl max-md:text-4xl font-semibold text-center  px-2"
           >
-Our Care.         </motion.h1>
+            Our Care.{" "}
+          </motion.h1>
           <div className="grid grid-cols-3 grid-rows-1 max-lg:grid-cols-2 max-lg:grid-rows-2 max-sm:grid-cols-1 max-sm:grid-rows-4 gap-4 relative mt-10 max-sm:mt-8">
             <img
               src="/cards-corner.png"
               className="absolute -left-10 -bottom-10 max-xl:hidden"
               alt=""
             />
-            
-                  <ServiceCard
-                    key={1}
-                    src={'https://files.cdn-files-a.com/uploads/9435802/400_668d11796fd24.jpg'}
-                    title={'Community Support'}
-                    desc={'Our supportive community promotes social interaction, peer support, and a sense of belonging, empowering residents on their recovery journey.'}
-                    // href={}
-                  />
-                    <ServiceCard
-                    key={2}
-                    src={'https://files.cdn-files-a.com/uploads/9435802/400_668d1177c93bc.jpg'}
-                    title={'Therapy Sessions'}
-                    desc={'We offer a variety of therapy sessions, including cognitive-behavioral therapy, group therapy, and art therapy, aimed at nurturing mental well-being.'}
-                    // href={}
-                  />
-                    <ServiceCard
-                    key={3}
-                    src={'https://static1.s123-cdn-static-a.com/uploads/2031/400_57d14bd1c7c33.jpg'}
-                    title={'Personalized Care Plans'}
-                    desc={'Our team creates individualized care plans to meet the unique needs of each resident, ensuring tailored support and comprehensive care.'}
-                    // href={}
-                  />
-              
+
+            <ServiceCard
+              key={1}
+              src={
+                "https://files.cdn-files-a.com/uploads/9435802/400_668d11796fd24.jpg"
+              }
+              title={"Community Support"}
+              desc={
+                "Our supportive community promotes social interaction, peer support, and a sense of belonging, empowering residents on their recovery journey."
+              }
+              // href={}
+            />
+            <ServiceCard
+              key={2}
+              src={
+                "https://files.cdn-files-a.com/uploads/9435802/400_668d1177c93bc.jpg"
+              }
+              title={"Therapy Sessions"}
+              desc={
+                "We offer a variety of therapy sessions, including cognitive-behavioral therapy, group therapy, and art therapy, aimed at nurturing mental well-being."
+              }
+              // href={}
+            />
+            <ServiceCard
+              key={3}
+              src={
+                "https://static1.s123-cdn-static-a.com/uploads/2031/400_57d14bd1c7c33.jpg"
+              }
+              title={"Personalized Care Plans"}
+              desc={
+                "Our team creates individualized care plans to meet the unique needs of each resident, ensuring tailored support and comprehensive care."
+              }
+              // href={}
+            />
           </div>
         </div>
       </div>
@@ -376,13 +388,13 @@ Our Care.         </motion.h1>
               variants={animationVariants.fadeLeft}
               className="text-5xl max-md:text-4xl font-semibold"
             >
-             Join our caring Community.
+              Join our caring Community.
             </motion.h1>
             <motion.p
               variants={animationVariants.fadeLeft}
               className="text-2xl"
             >
-             Your Journey to Healing Starts Here
+              Your Journey to Healing Starts Here
             </motion.p>
             <motion.div
               variants={animationVariants.fadeLeft}
@@ -463,7 +475,8 @@ Our Care.         </motion.h1>
             viewport={{ once: true, amount: 0.2 }}
             className="text-5xl max-md:text-4xl font-semibold text-center  px-2"
           >
-Branches         </motion.h1>
+            Branches{" "}
+          </motion.h1>
           <div className="grid grid-cols-4 grid-rows-1 max-lg:grid-cols-2 max-lg:grid-rows-2 max-sm:grid-cols-1 max-sm:grid-rows-4 gap-4 relative mt-10 max-sm:mt-8">
             <img
               src="/cards-corner.png"
@@ -504,7 +517,9 @@ Branches         </motion.h1>
               variants={animationVariants.zoomIn}
             >
               <ReviewCard
-                imgSrc={"	https://files.cdn-files-a.com/uploads/9435802/400_668d117bb8ca7.jpg"}
+                imgSrc={
+                  "	https://files.cdn-files-a.com/uploads/9435802/400_668d117bb8ca7.jpg"
+                }
                 title={"Jane Smith"}
                 from={"Resident"}
               />
@@ -514,7 +529,9 @@ Branches         </motion.h1>
               variants={animationVariants.zoomIn}
             >
               <ReviewCard
-                imgSrc={"	https://static1.s123-cdn-static-a.com/ready_uploads/media/2692690/400_5e0be51c56b84.jpg"}
+                imgSrc={
+                  "	https://static1.s123-cdn-static-a.com/ready_uploads/media/2692690/400_5e0be51c56b84.jpg"
+                }
                 title={"Emily Johnson"}
                 from={"Resident"}
               />
@@ -524,7 +541,9 @@ Branches         </motion.h1>
               variants={animationVariants.zoomIn}
             >
               <ReviewCard
-                imgSrc={"	https://files.cdn-files-a.com/uploads/9435802/400_668d117ad72a0.jpg"}
+                imgSrc={
+                  "	https://files.cdn-files-a.com/uploads/9435802/400_668d117ad72a0.jpg"
+                }
                 title={"John Doe"}
                 from={"Resident"}
               />

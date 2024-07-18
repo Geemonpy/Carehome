@@ -18,10 +18,12 @@ const ServicesComponent = () => {
           <div className="text-white flex flex-col gap-8 max-md:items-center max-md:text-center">
             <h1 className="text-5xl font-bold">Our Services</h1>
             <p className="text-xl max-w-md">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to mak
+              At Rosemanor, we offer comprehensive and compassionate care to
+              support your mental well-being. Our services include personalized
+              care plans, 24/7 professional support, therapeutic activities,
+              individual and group counseling, health and wellness programs, and
+              family involvement. We are committed to providing a safe and
+              comfortable environment where you can thrive.
             </p>
           </div>
           <div className="flex gap-12 text-white max-md:text-center">
@@ -53,28 +55,40 @@ const ServicesComponent = () => {
           );
         })} */}
         <ServiceCard
-         key={1}
-         title={"Community Support"}
-         brief={'Our supportive community promotes social interaction, peer support, and a sense of belonging, empowering residents on their recovery journey.'}
-         imgSrc={'https://files.cdn-files-a.com/uploads/9435802/400_668d11796fd24.jpg'}
-         id={1}
-        //  iconSrc={e.icon}
+          key={1}
+          title={"Community Support"}
+          brief={
+            "Our supportive community promotes social interaction, peer support, and a sense of belonging, empowering residents on their recovery journey."
+          }
+          imgSrc={
+            "https://files.cdn-files-a.com/uploads/9435802/400_668d11796fd24.jpg"
+          }
+          id={1}
+          //  iconSrc={e.icon}
         />
-         <ServiceCard
-         key={2}
-         title={"Therapy Sessions"}
-         brief={'We offer a variety of therapy sessions, including cognitive-behavioral therapy, group therapy, and art therapy, aimed at nurturing mental well-being.'}
-         imgSrc={'	https://files.cdn-files-a.com/uploads/9435802/400_668d1177c93bc.jpg'}
-         id={2}
-        //  iconSrc={e.icon}
+        <ServiceCard
+          key={2}
+          title={"Therapy Sessions"}
+          brief={
+            "We offer a variety of therapy sessions, including cognitive-behavioral therapy, group therapy, and art therapy, aimed at nurturing mental well-being."
+          }
+          imgSrc={
+            "	https://files.cdn-files-a.com/uploads/9435802/400_668d1177c93bc.jpg"
+          }
+          id={2}
+          //  iconSrc={e.icon}
         />
-         <ServiceCard
-         key={3}
-         title={"Personalized Care Plans"}
-         brief={'Our team creates individualized care plans to meet the unique needs of each resident, ensuring tailored support and comprehensive care.'}
-         imgSrc={'https://static1.s123-cdn-static-a.com/uploads/2031/400_57d14bd1c7c33.jpg'}
-         id={3}
-        //  iconSrc={e.icon}
+        <ServiceCard
+          key={3}
+          title={"Personalized Care Plans"}
+          brief={
+            "Our team creates individualized care plans to meet the unique needs of each resident, ensuring tailored support and comprehensive care."
+          }
+          imgSrc={
+            "https://static1.s123-cdn-static-a.com/uploads/2031/400_57d14bd1c7c33.jpg"
+          }
+          id={3}
+          //  iconSrc={e.icon}
         />
       </div>
     </>

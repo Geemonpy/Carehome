@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../../constants/scrollToTop";
-import logo from '../../public/images/logo.png'
+import logo from "../../public/images/logo.png";
 const Footer = () => {
   const toast = useToast();
   const [btnLoader, setBtnLoader] = useState(false);
@@ -139,10 +139,10 @@ const Footer = () => {
               <img src={logo} className="w-50 h-40" alt="rosemanor-logo" />
             </a>
             <p style={{ color: "#696969" }}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam,
-              pariatur. Fugit dignissimos aut tempora ullam similique minima
-              culpa quod fuga, doloribus expedita, cupiditate sint, nulla
-              distinctio soluta. Aut, sequi quia.
+              At Rosemanor, we prioritize your mental well-being by providing a
+              safe and tranquil space. Our compassionate team is dedicated to
+              offering personalized care, ensuring you feel supported and
+              understood every step of the way.
             </p>
             <div className="flex text-xl justify-start items-center gap-10 text-red-500">
               <Link target="_blank" to={"https://facebook.com"}>
@@ -186,7 +186,9 @@ const Footer = () => {
               </Link>
             </ul>
           </div>
-          <p style={{ color: "#696969" }}>© Rosemanor. All Rights Reserved 2024.</p>
+          <p style={{ color: "#696969" }}>
+            © Rosemanor. All Rights Reserved 2024.
+          </p>
         </div>
 
         <div
