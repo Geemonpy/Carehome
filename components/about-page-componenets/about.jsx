@@ -14,7 +14,7 @@ import "./about.css";
 const AboutPage = () => {
   return (
     <>
-      <div className="bg-[url(/services-page-images/service-hero-bg.jpg)] bg-fixed bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24 ">
+      <div className="bg-[url(https://www.careuk.com/getattachment/6869b9ed-3707-4886-ad23-c9281850b83b/AHW_8190-Edit.jpg?variant=HeroImageDesktopVariantDefinition)] bg-fixed bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24 ">
         <motion.div
           initial="initial"
           whileInView="animate"
@@ -33,11 +33,11 @@ const AboutPage = () => {
           <div className="flex gap-12 max-sm:text-center text-white">
             <div className="flex max-md:items-center flex-col gap-4">
               <h2 className="text-4xl title-font font-bold">19K+</h2>
-              <p className="text-lg">Premium houses</p>
+              <p className="text-lg">Premium Services</p>
             </div>
             <div className="flex max-md:items-center flex-col gap-4">
               <h2 className="text-4xl  title-font font-bold">5000+</h2>
-              <p className="text-lg">Premium houses</p>
+              <p className="text-lg">Premium Services</p>
             </div>
           </div>
         </motion.div>
@@ -78,29 +78,32 @@ const AboutPage = () => {
           <div className="what-we-do-cards mt-14 gap-8 max-md:grid-cols-1 max-md:grid-rows-3 grid grid-cols-3 grid-rows-1">
             <div>
               <h2 className="text-2xl text-red-500 font-semibold">
-                Get an instant free valuation
+                Community Support
               </h2>
               <p className="text-xl mt-2">
-                Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-                urna in elit amet.
+                Our supportive community promotes social interaction, peer
+                support, and a sense of belonging, empowering residents on their
+                recovery journey.
               </p>
             </div>
             <div>
               <h2 className="text-2xl text-red-500 font-semibold">
-                Get your property ready
+                Therapy Sessions
               </h2>
               <p className="text-xl mt-2">
-                Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-                urna in elit amet.
+                We offer a variety of therapy sessions, including
+                cognitive-behavioral therapy, group therapy, and art therapy,
+                aimed at nurturing mental well-being.
               </p>
             </div>
             <div>
               <h2 className="text-2xl text-red-500 font-semibold">
-                Offer acceptance
+                Personalized Care Plans
               </h2>
               <p className="text-xl mt-2">
-                Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-                urna in elit amet.
+                Our team creates individualized care plans to meet the unique
+                needs of each resident, ensuring tailored support and
+                comprehensive care.
               </p>
             </div>
           </div>
@@ -122,9 +125,11 @@ const AboutPage = () => {
               What we offer
             </h1>
             <p className="text-xl mt-5">
-              We are real estate agency that has been established since 1995
-              with many advantages over our competitors. We have more than 10000
-              happy customers and have worked with more than 200 distributors
+              At Mental Wellness Haven, we prioritize a holistic approach to
+              mental health recovery. Our expert team is committed to creating a
+              nurturing environment where individuals can heal and thrive. We
+              offer personalized care plans, therapy sessions, and community
+              support to help every resident achieve their best mental health.
             </p>
           </motion.div>
 
@@ -135,7 +140,7 @@ const AboutPage = () => {
             viewport={{ once: true, amount: 0.2 }}
             className=" w-1/2 max-md:w-full text-white/50"
           >
-            <h2 className="text-2xl">Our Projects</h2>
+            <h2 className="text-2xl">Our Clients</h2>
             <div className="relative w-fit max-md:mx-auto -mt-7 max-md:-mt-5">
               <h1 className="text-[150px] max-sm:text-[120px] font-semibold relative text-red-500">
                 200+
@@ -153,7 +158,7 @@ const AboutPage = () => {
         </div>
       </div>
       {/* we focus section start */}
-      <div>
+      {/* <div>
         <div
           style={{ maxWidth: 1200 }}
           className="mx-auto  p-10 py-28  max-sm:px-5 max-md:py-16  "
@@ -227,9 +232,9 @@ const AboutPage = () => {
             </motion.div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* we focus section start */}
-      <div
+      {/* <div
         className="bg-[50%] max-lg:bg-[55%] max-md:bg-[90%] bg-no-repeat bg-fixed"
         style={{ backgroundImage: "url('/faq-bannar.jpg')" }}
       >
@@ -292,11 +297,102 @@ const AboutPage = () => {
             </div>
           </motion.div>
         </div>
-      </div>
+      </div> */}
 
       {/* appreciation section start */}
       <div className="bg-white">
-        <div
+      <div
+          style={{ maxWidth: 1200 }}
+          className="p-10 max-md:px-5 py-28 mx-auto grid grid-cols-2 grid-rows-1 gap-20 max-lg:grid-cols-1 max-lg:grid-rows-2 "
+        >
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ staggerChildren: 0.1 }}
+            className="w-full max-lg:w-full flex flex-col  items-start max-lg:items-center max-lg:text-center gap-7"
+          >
+            <motion.h1
+              variants={animationVariants.fadeLeft}
+              className="text-5xl max-md:text-4xl font-semibold"
+            >
+             Join our caring Community.
+            </motion.h1>
+            <motion.p
+              variants={animationVariants.fadeLeft}
+              className="text-2xl"
+            >
+             Your Journey to Healing Starts Here
+            </motion.p>
+            <motion.div
+              variants={animationVariants.fadeLeft}
+              className="grid grid-cols-2 grid-rows-2 gap-10"
+            >
+              <div className="flex flex-col max-lg:justify-center max-lg:items-center">
+                <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
+                  8
+                </h2>
+                <p className="text-xl">
+                  Years of seccessful experience in caring
+                </p>
+              </div>
+              <div className="flex flex-col max-lg:justify-center max-lg:items-center">
+                <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
+                  8
+                </h2>
+                <p className="text-xl">
+                  Years of seccessful experience in caring
+                </p>
+              </div>
+              <div className="flex flex-col max-lg:justify-center max-lg:items-center">
+                <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
+                  8
+                </h2>
+                <p className="text-xl">
+                  Years of seccessful experience in caring
+                </p>
+              </div>
+              <div className="flex flex-col max-lg:justify-center max-lg:items-center">
+                <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
+                  8
+                </h2>
+                <p className="text-xl">
+                  Years of seccessful experience in caring
+                </p>
+              </div>
+            </motion.div>
+            <motion.div variants={animationVariants.fadeLeft}>
+              <Link onClick={scrollToTop} to={"/contact"}>
+                <Button
+                  content={"Get In Touch"}
+                  padding={"px-6 py-3"}
+                  fontSize={"text-xl"}
+                />
+              </Link>
+            </motion.div>
+          </motion.div>
+          <div className="w-full max-lg:w-full h-full max-sm:max-h-[500px] ">
+            <div className=" h-full w-full relative overflow-hidden rounded-lg">
+              <img
+                src="https://files.cdn-files-a.com/uploads/9435802/2000_668d1175c2912.jpg"
+                className="absolute w-full h-full object-cover object-center "
+                alt=""
+              />
+              <div className="absolute w-full h-full bg-black/50 "></div>
+
+              <motion.div
+                initial="initial"
+                whileInView="animate"
+                variants={animationVariants.toLeft}
+                viewport={{ once: true, amount: 0.2 }}
+                className="absolute w-full h-full bg-white origin-left z-20 "
+              >
+                <div className=""></div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+        {/* <div
           style={{ maxWidth: 1200 }}
           className="p-10 max-md:px-5 py-28 mx-auto grid grid-cols-2 grid-rows-1 gap-20 max-lg:grid-cols-1 max-lg:grid-rows-2 "
         >
@@ -386,12 +482,12 @@ const AboutPage = () => {
               </motion.div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* appreciation section end */}
       {/* review section start */}
       <div className="bg-gray-100">
-        <div
+      <div
           style={{ maxWidth: 1200 }}
           className=" mx-auto flex max-md:flex-col justify-center items-center gap-16 p-10 max-md:px-5 py-28 "
         >
@@ -407,9 +503,9 @@ const AboutPage = () => {
               variants={animationVariants.zoomIn}
             >
               <ReviewCard
-                imgSrc={"/reviews/jane-cooper.jpg"}
-                title={"Jane Cooper"}
-                from={"Real Estate"}
+                imgSrc={"	https://files.cdn-files-a.com/uploads/9435802/400_668d117bb8ca7.jpg"}
+                title={"Jane Smith"}
+                from={"Resident"}
               />
             </motion.div>
             <motion.div
@@ -417,9 +513,9 @@ const AboutPage = () => {
               variants={animationVariants.zoomIn}
             >
               <ReviewCard
-                imgSrc={"/reviews/robert-fox.jpg"}
-                title={"Robert Fox"}
-                from={"Creative Director"}
+                imgSrc={"	https://static1.s123-cdn-static-a.com/ready_uploads/media/2692690/400_5e0be51c56b84.jpg"}
+                title={"Emily Johnson"}
+                from={"Resident"}
               />
             </motion.div>
             <motion.div
@@ -427,9 +523,9 @@ const AboutPage = () => {
               variants={animationVariants.zoomIn}
             >
               <ReviewCard
-                imgSrc={"/reviews/marvin-mckinney.jpg"}
-                title={"Marvin Mckinney"}
-                from={"CEO of Bimetrix"}
+                imgSrc={"	https://files.cdn-files-a.com/uploads/9435802/400_668d117ad72a0.jpg"}
+                title={"John Doe"}
+                from={"Resident"}
               />
             </motion.div>
           </motion.div>
@@ -441,7 +537,7 @@ const AboutPage = () => {
             className="w-2/4 max-md:w-full max-md:text-center flex flex-col gap-8"
           >
             <h1 className="text-5xl max-md:text-4xl font-semibold">
-              Why do people love homyz
+              Why do people love Rosmanor
             </h1>
             <div>
               <Carousel />
@@ -456,7 +552,7 @@ const AboutPage = () => {
           style={{ maxWidth: 1200 }}
           className=" mx-auto flex max-md:flex-col justify-center items-center gap-10 p-10 max-md:px-5  "
         >
-          <motion.div
+          {/* <motion.div
             initial="initial"
             whileInView="animate"
             variants={animationVariants.fadeIn}
@@ -473,7 +569,7 @@ const AboutPage = () => {
                 />
               );
             })}
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
       {/* partner brand section end */}

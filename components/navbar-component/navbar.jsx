@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { formatCompactNumber } from "../../constants/formatNumber";
 import { scrollToTop } from "../../constants/scrollToTop";
+import rlogo from '../../public/images/logo.png'
 const NavBar = ({ navBar2, showCase1Page }) => {
   const [totalQty, setTotalQty] = useState(0);
   const [subTotal, setSubTotal] = useState(0);
@@ -238,8 +239,8 @@ const NavBar = ({ navBar2, showCase1Page }) => {
         >
           <Link onClick={scrollToTop} to="/">
             <img
-              src={navBar2 ? "/Homyz-logo2.png" : logo}
-              className="w-44 max-lg:w-36"
+              src={rlogo}
+              className="w-44 h-33 max-lg:w-50"
               alt="Homyz-logo"
             />
           </Link>
@@ -266,7 +267,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
             >
               Services
             </Link>
-            <div className="showcase-menu cursor-pointer hover:text-red-500 transition-all relative">
+            {/* <div className="showcase-menu cursor-pointer hover:text-red-500 transition-all relative">
               Branches
               <div className="showcase-list hidden absolute cursor-default -left-4 ">
                 <ul
@@ -301,7 +302,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
             <Link
               onClick={scrollToTop}
               className="hover:text-red-500 transition-all"
@@ -434,7 +435,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
             Our Services
           </Link>
           <div className="relative">
-            <div
+            {/* <div
               onClick={() => {
                 setShowcaseDropDown(!showcaseDropDown);
               }}
@@ -446,8 +447,8 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                   showcaseDropDown ? "-rotate-180" : "rotate-0"
                 } transition-all `}
               />
-            </div>
-            <ul
+            </div> */}
+            {/* <ul
               className={`flex flex-col gap-2 mt-3 pl-5 transition-all duration-300 origin-top  `}
             >
               <Link
@@ -470,10 +471,10 @@ const NavBar = ({ navBar2, showCase1Page }) => {
               >
                 Show Cases 2
               </Link>
-            </ul>
+            </ul> */}
             <div
               className={`${
-                showcaseDropDown ? "top-[114px]" : "top-[41px]"
+                showcaseDropDown ? "top-[114px]" : "top-[0px]"
               } transition-all duration-200 absolute  w-full bg-white h-24`}
             >
               <Link

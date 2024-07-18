@@ -28,7 +28,7 @@ const ServiceCard = ({ id, title, imgSrc, iconSrc, brief }) => {
         <p className="it-content text-xl mt-10 max-w-md opacity-0  text-center  scale-y-0 transition-all duration-75 origin-top">
           {brief}
         </p>
-        <Link
+        {/* <Link
           to={`/services/${id}`}
           onClick={scrollToTop}
           className="it-content text-xl mt-10 font-semibold  opacity-0 scale-y-0 transition-all duration-75 origin-top hover:text-black"
@@ -37,7 +37,7 @@ const ServiceCard = ({ id, title, imgSrc, iconSrc, brief }) => {
             <p className="duration-150">Read More </p>
             <FaArrowRight className="duration-150" style={{ marginTop: 2 }} />
           </div>
-        </Link>
+        </Link> */}
       </div>
     </motion.div>
   );

@@ -333,7 +333,7 @@ const ContactPage = () => {
             <h1 className="font-semibold ">
               Contact our support{" "}
               <span className="font-semibold title-font  text-red-500">
-                team to grow your business
+                team
               </span>
             </h1>
           </div>
@@ -347,19 +347,19 @@ const ContactPage = () => {
               <div>
                 <FaEnvelope className="text-red-500" />
               </div>
-              <p>Office # 420 DHA Phase 90, Karachi, PK</p>
+              <p>Manhattan, New York, NY, United States</p>
             </div>
             <div className="flex  gap-3 text-xl items-center">
               <div>
                 <FaPhone className="rotate-90 text-red-500" />
               </div>
-              <p>+92 39283848238</p>
+              <p>999-7777-000</p>
             </div>
             <div className="flex  gap-3 text-xl items-center">
               <div>
                 <FaMapMarkerAlt className="text-red-500" />
               </div>
-              <p>information@office.com</p>
+              <p>banchela2@gmail.com</p>
             </div>
           </div>
         </motion.div>
@@ -437,7 +437,7 @@ const ContactPage = () => {
 
       {/* what we do section start */}
       <div className="bg-gray-100">
-        <div
+      <div
           style={{ maxWidth: 1200 }}
           className=" mx-auto flex gap-5 justify-between items-start p-10 py-28 max-md:py-16 max-md:px-5 max-lg:flex-col max-lg:items-center  max-lg:gap-12"
         >
@@ -449,14 +449,14 @@ const ContactPage = () => {
             className="w-1/3 max-lg:w-full max-lg:text-center flex flex-col gap-2 items-start max-lg:items-center"
           >
             <h2 className="text-5xl max-md:text-4xl font-bold title-font">
-              What we do
+              Love, Care & Joy{" "}
             </h2>
             <p className="text-xl">
-              Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-              urna in elit amet blandit enim lacinia. Tellus leo felis et vel
-              eget maecenas.
+              Whatever your needs may be, our proactive and friendly team are
+              always on hand to help. Live purposeful and fulfilling days with a
+              supportive arm around your shoulder.
             </p>
-            <Link to="/about" onClick={scrollToTop}>
+            <Link onClick={scrollToTop} to={"/about"}>
               <button
                 style={{ borderWidth: 1.5, borderRadius: 4 }}
                 className="bg-transparent  text-black border-red-500 text-xl px-5 py-2 duration-300 hover:bg-red-500 hover:text-white transition-all mt-5 max-md:mt-3"
@@ -466,8 +466,6 @@ const ContactPage = () => {
             </Link>
           </motion.div>
 
-          {/* <div className="cards w-2/3 max-lg:w-full flex justify-center max-md:flex-col max-md:items-center gap-7"> */}
-
           <motion.div
             initial="initial"
             whileInView="animate"
@@ -475,29 +473,20 @@ const ContactPage = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="cards w-2/3 max-lg:w-full flex justify-center max-md:flex-col max-md:items-center gap-7"
           >
-            {/* <Reveal
-              triggerOnce={true}
-              className="flex flex-col gap-7 "
-              keyframes={fadeUp}
-            > */}
-
-            {/* <div className="flex flex-col gap-7 "> */}
             <div className="flex flex-col gap-7 ">
               <WhatWeDoCard
-                iconSrc={"/icons/reliability.png"}
-                iconAlt={"reliability"}
-                title={"Reliability"}
-                desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
+                iconSrc={
+                  "https://www.hallmarkcarehomes.co.uk/app/uploads/2023/08/People-holding-hands.svg"
                 }
+                iconAlt={"reliability"}
+                title={"Relationship-Centred"}
+                desc={"You & your loved ones at the heart of everything we do"}
               />
               <WhatWeDoCard
                 iconSrc={"/icons/communication.png"}
                 iconAlt={"communication"}
-                title={"communication"}
-                desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
-                }
+                title={"Homes for Living"}
+                desc={"Everything you need to spend your days, your way"}
               />
             </div>
             <div className="flex flex-col gap-7">
@@ -508,10 +497,8 @@ const ContactPage = () => {
               <WhatWeDoCard
                 iconSrc={"/icons/quality-first.png"}
                 iconAlt={"quality-first"}
-                title={"Quality First"}
-                desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
-                }
+                title={"Loved by Residents"}
+                desc={"With a 9.8/10 review score on carehome.co.uk"}
               />
               <div
                 style={{ height: 130 }}
@@ -519,10 +506,9 @@ const ContactPage = () => {
               ></div>
             </div>
           </motion.div>
-          {/* </Reveal> */}
         </div>
       </div>
-      <div
+      {/* <div
         style={{ maxWidth: 1200 }}
         className=" mx-auto  p-10 py-28 max-md:py-14 max-md:px-5 "
       >
@@ -712,7 +698,7 @@ const ContactPage = () => {
             </div>
           </Accordion>
         </motion.div>
-      </div>
+      </div> */}
       {/* what we do section end */}
     </div>
   );
