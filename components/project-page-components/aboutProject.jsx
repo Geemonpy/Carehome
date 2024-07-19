@@ -19,7 +19,7 @@ const AboutProject = ({ heroImageSrc, attachment, phone }) => {
   const project = showCase[param.id - 1];
   console.log("pr", project?.map_src);
   useEffect(() => {
-    document.title = `${project.city} - Homyz `;
+    document.title = `${project.city} - Rosemanor `;
   }, [param]);
   return (
     <div className="overflow-hidden">
