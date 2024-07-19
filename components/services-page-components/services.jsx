@@ -26,16 +26,16 @@ const ServicesComponent = () => {
               comfortable environment where you can thrive.
             </p>
           </div>
-          <div className="flex gap-12 text-white max-md:text-center">
+          {/* <div className="flex gap-12 text-white max-md:text-center">
             <div className="flex max-md:items-center  flex-col gap-4">
-              <h2 className="text-4xl title-font font-bold">19K+</h2>
-              <p className="text-lg">Premium houses</p>
+              <h2 className="text-4xl title-font font-bold">10k+</h2>
+              <p className="text-lg">Happy clients</p>
             </div>
-            <div className="flex max-md:items-center flex-col gap-4">
+            {/* <div className="flex max-md:items-center flex-col gap-4">
               <h2 className="text-4xl  title-font font-bold">5000+</h2>
               <p className="text-lg">Premium houses</p>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */} */}
         </motion.div>
       </div>
       <div
