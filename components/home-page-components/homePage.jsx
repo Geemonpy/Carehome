@@ -16,6 +16,7 @@ import { scrollToTop } from "../../constants/scrollToTop";
 import { partnerBrands } from "../../constants/partnerBrands";
 import { useToast } from "@chakra-ui/react";
 import ServiceCard from "./serviceCard";
+import b1 from '../../public/images/b1.jpeg'
 
 const HomePage = () => {
   const navigate = useNavigate();

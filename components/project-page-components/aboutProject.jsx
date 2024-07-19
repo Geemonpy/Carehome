@@ -14,9 +14,10 @@ import { animationVariants } from "../../constants/animationVariants";
 import { motion } from "framer-motion";
 import { scrollToTop } from "../../constants/scrollToTop";
 import { useEffect } from "react";
-const AboutProject = ({ heroImageSrc, attachment }) => {
+const AboutProject = ({ heroImageSrc, attachment, phone }) => {
   const param = useParams();
   const project = showCase[param.id - 1];
+  console.log("pr", project?.map_src);
   useEffect(() => {
     document.title = `${project.city} - Homyz `;
   }, [param]);
@@ -69,17 +70,17 @@ const AboutProject = ({ heroImageSrc, attachment }) => {
           className="flex flex-col gap-4"
         >
           <div className="">
-            <h2 className="text-xl mb-2 ">Client</h2>
-            <h3 className="text-xl opacity-80">Insight Studio</h3>
+            <h2 className="text-xl mb-2 ">Phone</h2>
+            <h3 className="text-xl opacity-80">{project?.phone}</h3>
           </div>
-          <div className="">
+          {/* <div className="">
             <h2 className="text-xl mb-2 ">Date</h2>
             <h3 className="text-xl opacity-80">December 7, 2022</h3>
           </div>
           <div className="">
             <h2 className="text-xl mb-2 ">Services</h2>
             <h3 className="text-xl opacity-80">Art Direction, Website</h3>
-          </div>
+          </div> */}
           <div className="">
             <h2 className="text-xl mb-2 ">Share on</h2>
             <div className="text-xl text-red-500 flex gap-3">
@@ -117,61 +118,69 @@ const AboutProject = ({ heroImageSrc, attachment }) => {
         style={{ maxWidth: 1200 }}
         className="text-lg mx-auto p-10 max-sm:px-5 max-sm:pt-5  max-sm:mb-8 mb-20"
       >
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
-          dolorum enim, veniam totam eius tempora facere assumenda! Iste quod,
-          assumenda totam fugiat omnis, similique maxime magnam nulla inventore
-          et suscipit sapiente? Exercitationem assumenda mollitia neque quaerat
-          blanditiis et consectetur necessitatibus.
-        </p>
-        <div className="p-5 px-10 max-sm:px-4">
-          <h2 className="text-2xl text-center font-semibold p-5 max-sm:p-3 border-l-4 border-red-500">
-            Recognised and awarded on multiple occasions for producing
-            consistently outstanding products
-          </h2>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis saepe
-          iste sed quibusdam ad voluptatem optio? Soluta veritatis dicta
-          consectetur numquam quibusdam voluptate est voluptatum tenetur?
-          Debitis cum quo nostrum suscipit qui id odio, doloribus voluptates
-          vero vitae quidem facilis cupiditate libero minima impedit quod natus
-          expedita quibusdam necessitatibus sapiente ratione pariatur, animi
-          error. Excepturi voluptates minus iusto explicabo assumenda suscipit,
-          et laboriosam nemo, quia blanditiis aut atque exercitationem dolorem.
-        </p>
         <div className="flex flex-col gap-1 mt-4">
-          <h2 className="text-2xl font-semibold">
-            The path towards customer-centricity
-          </h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-            asperiores quidem maiores odio quaerat totam expedita reiciendis,
-            nobis ducimus eius, mollitia eaque esse dignissimos ipsum ex sit
-            laudantium tempore! Illo velit deserunt nulla hic modi rem
-            architecto nesciunt cum magnam, optio, dolore aut porro vel
-            voluptatibus eius sed inventore ad dignissimos perferendis error
-            ipsam, in unde consequuntur? Totam incidunt nulla, odit repellendus
-            doloribus numquam error commodi laboriosam, facilis vel quo quaerat
-            repudiandae earum. Distinctio at voluptatem, magni blanditiis
-            pariatur deserunt nobis modi quaerat voluptates sit. Quam dolores
-            quos nihil tenetur eos vero autem sint dolorem eius. Tempora
-            molestiae earum ducimus?
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-            asperiores quidem maiores odio quaerat totam expedita reiciendis,
-            nobis ducimus eius, mollitia eaque esse dignissimos ipsum ex sit
-            laudantium tempore! Illo velit deserunt nulla hic modi rem
-            architecto nesciunt cum magnam, optio, dolore aut porro vel
-            voluptatibus eius sed inventore ad dignissimos perferendis error
-            ipsam, in unde consequuntur? Totam incidunt nulla, odit repellendus
-            doloribus numquam error commodi laboriosam, facilis vel quo quaerat
-            repudiandae earum. Distinctio at voluptatem, magni blanditiis
-            pariatur deserunt nobis modi quaerat voluptates sit. Quam dolores
-            quos nihil tenetur eos vero autem sint dolorem eius. Tempora
-            molestiae earum ducimus?
-          </p>
+          <div className="">
+            {project?.id === 1 && (
+              <div style={{ width: "100%" }}>
+                <iframe
+                  width="100%"
+                  height="600"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Rose%20Manor-Hopton+(Rose%20Manor-Hopton)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                >
+                  <a href="https://www.gps.ie/">gps systems</a>
+                </iframe>
+              </div>
+            )}
+            {project?.id === 2 && (
+              <div style={{ width: "100%" }}>
+                <iframe
+                  width="100%"
+                  height="600"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Rosemanor%201%20Residential%20Care%20Homes%2046%20Kempshott%20Rd,%20London%20SW16%205LQ,%20United%20Kingdom+(Rosemanor%201%20Residential%20Care%20Homes)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                >
+                  <a href="https://www.gps.ie/">gps devices</a>
+                </iframe>
+              </div>
+            )}
+            {project?.id === 3 && (
+              <div style={{ width: "100%" }}>
+                <iframe
+                  width="100%"
+                  height="600"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=rose%20manor%2018%20Bensham%20Manor%20Rd,%20Thornton%20Heath%20CR7%207AA,%20United%20Kingdom+(Rose%20Manor)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                >
+                  <a href="https://www.gps.ie/">gps vehicle tracker</a>
+                </iframe>
+              </div>
+            )}
+            {project?.id === 4 && (
+              <div style={{ width: "100%" }}>
+                <iframe
+                  width="100%"
+                  height="600"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Rosemanor%202+(Rosemanor%202)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                >
+                  <a href="https://www.gps.ie/">gps devices</a>
+                </iframe>
+              </div>
+            )}
+          </div>
         </div>
       </motion.div>
 
