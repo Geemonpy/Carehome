@@ -96,10 +96,10 @@ const HomePage = () => {
             className="flex max-lg:flex-col max-lg:items-center gap-10 w-full justify-between items-end mt-4"
           >
             <div className="flex gap-12">
-              <div className="flex flex-col text-black gap-4">
+              {/* <div className="flex flex-col text-black gap-4">
                 <h2 className="text-4xl title-font font-bold">19K+</h2>
                 <p className="text-lg">Premium Cares</p>
-              </div>
+              </div> */}
               {/* <div className="flex flex-col gap-4">
                 <h2 className="text-4xl title-font font-bold">5000+</h2>
                 <p className="text-lg">Premium houses</p>
