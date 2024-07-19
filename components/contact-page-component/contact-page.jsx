@@ -21,7 +21,7 @@ import { Button, Input, Textarea, useToast } from "@chakra-ui/react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../../constants/scrollToTop";
-
+import emailjs from 'emailjs-com'
 const ContactPage = () => {
   const toast = useToast();
   const [btnLoader, setBtnLoader] = useState(false);
@@ -63,13 +63,43 @@ const ContactPage = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async () => {
+   
+    try {
+     const response =await  emailjs.send("service_7y68v5w","template_qdgg4sk",{
+        firstName: formData?.firstName,
+        to_name: "Reosemanor",
+        lastName: formData?.lastName,
+        email: formData?.email,
+        phone: formData?.phoneNo,
+        message: formData?.message,
+        reply_to: "Reosemanor",
+        },"nj0Q-d8XDd1R5XVgh");
+  
+      if (response.status) {
+        setResult("Form Submitted Successfully");
+        // event.target.reset();
+      } else {
+        console.log("Error", data);
+        setResult("email not send");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setResult("Error submitting form");
+    }
+  };
+
+
   const handleSubmit = (e) => {
     const errors = validateForm(formData);
 
     if (errors === false) {
       setBtnLoader(true);
       axios
-        .post("https://homyz-server.vercel.app/contact", formData)
+        // .post("https://homyz-server.vercel.app/contact", formData)
+        console.log('f',formData)
         .then((response) => {
           showToast();
           setFormData({
@@ -328,7 +358,7 @@ const ContactPage = () => {
             size={"lg"}
             isLoading={btnLoader}
             loadingText={"Sending.."}
-            onClick={handleSubmit}
+            onClick={onSubmit}
             className="w-full"
             transitionDuration={"300ms"}
             fontWeight={"normal"}
