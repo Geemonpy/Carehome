@@ -35,12 +35,12 @@ const ServicesComponent = () => {
               <h2 className="text-4xl  title-font font-bold">5000+</h2>
               <p className="text-lg">Premium houses</p>
             </div> */}
-          {/* </div> */} */}
+          {/* </div> */} 
         </motion.div>
       </div>
       <div
         style={{ maxWidth: 1200 }}
-        className="mx-auto grid grid-cols-2 max-md:grid-rows-6 max-md:grid-cols-1 grid-rows-3 p-10 max-lg:px-5 gap-5"
+        className="mx-auto grid grid-cols-2 max-md:grid-rows-2  max-md:grid-cols-1 grid-rows-2 p-10 max-lg:px-5 gap-1 "
       >
         {/* {servicesData.map((e, i) => {
           return (

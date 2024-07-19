@@ -31,7 +31,7 @@ const AboutPage = () => {
             We provide a compassionate environment where minds are nurtured, and hearts are healed.
             </p>
           </div>
-          <div className="flex gap-12 max-sm:text-center text-white">
+          {/* <div className="flex gap-12 max-sm:text-center text-white">
             <div className="flex max-md:items-center flex-col gap-4">
               <h2 className="text-4xl title-font font-bold">19K+</h2>
               <p className="text-lg">Premium Services</p>
@@ -40,7 +40,7 @@ const AboutPage = () => {
               <h2 className="text-4xl  title-font font-bold">5000+</h2>
               <p className="text-lg">Premium Services</p>
             </div>
-          </div>
+          </div> */}
         </motion.div>
       </div>
 
@@ -144,12 +144,12 @@ const AboutPage = () => {
             <h2 className="text-2xl">Our Clients</h2>
             <div className="relative w-fit max-md:mx-auto -mt-7 max-md:-mt-5">
               <h1 className="text-[150px] max-sm:text-[120px] font-semibold relative text-red-500">
-                200+
+                1000+
               </h1>
               <div
                 className="absolute z-50 top-0 right-0 left-0 bottom-0 bg-no-repeat "
                 style={{
-                  backgroundImage: "url(/200+.png)",
+                  // backgroundImage: "url(/200+.png)",
                   backgroundPosition: "40% 100%",
                   backgroundSize: "95%",
                 }}
