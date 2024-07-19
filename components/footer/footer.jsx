@@ -5,6 +5,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../../constants/scrollToTop";
 import logo from "../../public/images/logo.png";
+import emailjs from 'emailjs-com'
 const Footer = () => {
   const toast = useToast();
   const [btnLoader, setBtnLoader] = useState(false);
@@ -71,6 +72,44 @@ const Footer = () => {
         });
     }
   };
+
+  const onSubmit = async () => {
+    setBtnLoader(true);
+
+    try {
+     const response =await  emailjs.send("service_7y68v5w","template_qdgg4sk",{
+        firstName: formData?.firstName,
+        to_name: "Reosemanor",
+        lastName: formData?.lastName,
+        email: formData?.email,
+        phone: formData?.phoneNo,
+        message: formData?.message,
+        reply_to: "Reosemanor",
+        },"nj0Q-d8XDd1R5XVgh");
+  
+      if (response.status) {
+        showToast();
+        setBtnLoader(false);
+        setFormData({
+          firstName: "",
+          lastName: "",
+          phoneNo: "",
+          email: "",
+          message: "",
+        });
+      
+      } else {
+        setBtnLoader(false);
+
+        console.log("Error", data);
+      }
+    } catch (error) {
+      setBtnLoader(false);
+
+      console.error("Error submitting form:", error);
+    }
+  };
+
 
   const isValidEmail = (email) => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -282,7 +321,7 @@ const Footer = () => {
             size={"lg"}
             isLoading={btnLoader}
             loadingText={"Sending.."}
-            onClick={handleSubmit}
+            onClick={onSubmit}
             className="mt-4  max-lg:w-72 max-sm:w-full"
             transitionDuration={"300ms"}
             fontWeight={"normal"}

@@ -66,7 +66,8 @@ const ContactPage = () => {
   const [result, setResult] = React.useState("");
 
   const onSubmit = async () => {
-   
+    setBtnLoader(true);
+
     try {
      const response =await  emailjs.send("service_7y68v5w","template_qdgg4sk",{
         firstName: formData?.firstName,
@@ -81,7 +82,19 @@ const ContactPage = () => {
       if (response.status) {
         setResult("Form Submitted Successfully");
         // event.target.reset();
+        showToast();
+          setFormData({
+            firstName: "",
+            lastName: "",
+            phoneNo: "",
+            email: "",
+            message: "",
+          });
+          setBtnLoader(false);
+
       } else {
+        setBtnLoader(false);
+
         console.log("Error", data);
         setResult("email not send");
       }
