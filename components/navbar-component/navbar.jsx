@@ -393,7 +393,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
         } bg-white  left-0 w-96 p-5 px-10 max-sm:px-5 max-sm:w-80 z-30 transition-all font-medium`}
       >
         <div id="header" className="flex justify-between items-center">
-          <img className="w-36" src="/Homyz-logo2.png" alt="Homyz-logo2" />
+          <img className="w-36" src={rlogo} alt="rlogo" />
           <div
             onClick={() => {
               setViewSideNav(!viewSideNav);

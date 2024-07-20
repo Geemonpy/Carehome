@@ -3,10 +3,11 @@ import ServiceCard from "./serviceCard";
 import { servicesData } from "../../constants/servicesData";
 import { motion } from "framer-motion";
 import { animationVariants } from "../../constants/animationVariants";
+import serviceimg from '../../public/images/about2.jpg'
 const ServicesComponent = () => {
   return (
     <>
-      <div className="bg-[url(https://files.cdn-files-a.com/uploads/9435802/2000_668d1174d10d6.jpg)] bg-fixed bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24 ">
+      <div style={{ backgroundImage: `url(${serviceimg})` }}  className=" bg-fixed bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24 ">
         <motion.div
           initial="initial"
           whileInView="animate"
@@ -15,9 +16,9 @@ const ServicesComponent = () => {
           style={{ maxWidth: 1200 }}
           className="flex gap-10 justify-between items-end max-md:items-center px-10 mx-auto max-md:px-5 max-md:flex-col"
         >
-          <div className="text-white flex flex-col gap-8 max-md:items-center max-md:text-center">
+          <div className="text-black-400 flex flex-col gap-8 max-md:items-center max-md:text-center">
             <h1 className="text-5xl font-bold">Our Services</h1>
-            <p className="text-xl max-w-md">
+            <p className="text-xl  max-w-md font-[700]">
               At Rosemanor, we offer comprehensive and compassionate care to
               support your mental well-being. Our services include personalized
               care plans, 24/7 professional support, therapeutic activities,

@@ -17,6 +17,7 @@ import { partnerBrands } from "../../constants/partnerBrands";
 import { useToast } from "@chakra-ui/react";
 import ServiceCard from "./serviceCard";
 import b1 from '../../public/images/b1.jpeg'
+import home1 from '../../public/images/home1.jpg'
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -43,7 +44,7 @@ const HomePage = () => {
   };
   return (
     <div className=" w-full overflow-hidden">
-      <div className="  flex bg-[url('https://signaturefoundation.com/upload/slide/1.jpg')] pt-36 pb-20 bg-top bg-no-repeat bg-cover  ">
+      <div  className="  flex  pt-36 pb-20 bg-top bg-no-repeat bg-cover  "         style={{ backgroundImage: `url(${home1})` }}      >
         <motion.div
           initial="initial"
           whileInView="animate"
@@ -399,17 +400,25 @@ const HomePage = () => {
             </motion.p>
             <motion.div
               variants={animationVariants.fadeLeft}
-              className="grid grid-cols-2 grid-rows-2 gap-10"
+              className="grid grid-cols-2 grid-rows-1 gap-10"
             >
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
+                  1000+
+                </h2>
+                <p className="text-xl">
+                  Happy clients
+                </p>
+              </div>
+              <div className="flex flex-col max-lg:justify-center max-lg:items-center">
+                <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
                   8
                 </h2>
                 <p className="text-xl">
                   Years of seccessful experience in caring
                 </p>
               </div>
-              <div className="flex flex-col max-lg:justify-center max-lg:items-center">
+              {/* <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
                   8
                 </h2>
@@ -424,15 +433,7 @@ const HomePage = () => {
                 <p className="text-xl">
                   Years of seccessful experience in caring
                 </p>
-              </div>
-              <div className="flex flex-col max-lg:justify-center max-lg:items-center">
-                <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
-                </h2>
-                <p className="text-xl">
-                  Years of seccessful experience in caring
-                </p>
-              </div>
+              </div> */}
             </motion.div>
             <motion.div variants={animationVariants.fadeLeft}>
               <Link onClick={scrollToTop} to={"/contact"}>

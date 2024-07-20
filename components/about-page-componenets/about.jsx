@@ -327,17 +327,25 @@ const AboutPage = () => {
             </motion.p>
             <motion.div
               variants={animationVariants.fadeLeft}
-              className="grid grid-cols-2 grid-rows-2 gap-10"
+              className="grid grid-cols-2 grid-rows-1 gap-10"
             >
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
+                  1000+
+                </h2>
+                <p className="text-xl">
+                  Happy Clients
+                </p>
+              </div>
+              <div className="flex flex-col max-lg:justify-center max-lg:items-center">
+                <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
                   8
                 </h2>
                 <p className="text-xl">
                   Years of seccessful experience in caring
                 </p>
               </div>
-              <div className="flex flex-col max-lg:justify-center max-lg:items-center">
+              {/* <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
                   8
                 </h2>
@@ -352,15 +360,7 @@ const AboutPage = () => {
                 <p className="text-xl">
                   Years of seccessful experience in caring
                 </p>
-              </div>
-              <div className="flex flex-col max-lg:justify-center max-lg:items-center">
-                <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
-                </h2>
-                <p className="text-xl">
-                  Years of seccessful experience in caring
-                </p>
-              </div>
+              </div> */}
             </motion.div>
             <motion.div variants={animationVariants.fadeLeft}>
               <Link onClick={scrollToTop} to={"/contact"}>
