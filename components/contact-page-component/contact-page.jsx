@@ -408,19 +408,21 @@ const ContactPage = () => {
               <div>
                 <FaEnvelope className="text-red-500" />
               </div>
-              <p>Manhattan, New York, NY, United States</p>
+              <p> Rose Manor
+               18 Bensham Manor Rd, Thornton Heath CR7 7AA, United Kingdom
+              </p>
             </div>
             <div className="flex  gap-3 text-xl items-center">
               <div>
                 <FaPhone className="rotate-90 text-red-500" />
               </div>
-              <p>999-7777-000</p>
+              <p>02087648915</p>
             </div>
             <div className="flex  gap-3 text-xl items-center">
               <div>
                 <FaMapMarkerAlt className="text-red-500" />
               </div>
-              <p>banchela2@gmail.com</p>
+              <p>rosemanor@gmail.com</p>
             </div>
           </div>
         </motion.div>
@@ -509,7 +511,7 @@ const ContactPage = () => {
             className="w-1/3 max-lg:w-full max-lg:text-center flex flex-col gap-2 items-start max-lg:items-center"
           >
             <h2 className="text-5xl max-md:text-4xl font-bold title-font">
-              Love, Care & Joy{" "}
+              Love & Care {" "}
             </h2>
             <p className="text-xl">
               Whatever your needs may be, our proactive and friendly team are

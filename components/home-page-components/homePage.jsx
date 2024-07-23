@@ -17,7 +17,7 @@ import { partnerBrands } from "../../constants/partnerBrands";
 import { useToast } from "@chakra-ui/react";
 import ServiceCard from "./serviceCard";
 import b1 from '../../public/images/b1.jpeg'
-import home1 from '../../public/images/home1.jpg'
+import home1 from '../../public/images/black1.jpg'
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -44,7 +44,7 @@ const HomePage = () => {
   };
   return (
     <div className=" w-full overflow-hidden">
-      <div  className="  flex  pt-36 pb-20 bg-top bg-no-repeat bg-cover  "         style={{ backgroundImage: `url(${home1})` }}      >
+      <div  className="  flex  pt-36 pb-20 bg-top bg-no-repeat bg-cover h-94  "         style={{ backgroundImage: `url(${home1})` }}      >
         <motion.div
           initial="initial"
           whileInView="animate"
@@ -183,7 +183,7 @@ const HomePage = () => {
             className="w-1/3 max-lg:w-full max-lg:text-center flex flex-col gap-2 items-start max-lg:items-center"
           >
             <h2 className="text-5xl max-md:text-4xl font-bold title-font">
-              Love, Care & Joy{" "}
+              Love & Care{" "}
             </h2>
             <p className="text-xl">
               Whatever your needs may be, our proactive and friendly team are
