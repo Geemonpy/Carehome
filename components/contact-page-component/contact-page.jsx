@@ -547,7 +547,7 @@ const ContactPage = () => {
               <WhatWeDoCard
                 iconSrc={"/icons/communication.png"}
                 iconAlt={"communication"}
-                title={"Homes for Living"}
+                title={"Rehabilitation"}
                 desc={"Everything you need to spend your days, your way"}
               />
             </div>

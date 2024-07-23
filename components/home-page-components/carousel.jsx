@@ -34,7 +34,7 @@ export default function Carousel() {
         </SwiperSlide>
         <SwiperSlide>
          " The compassionate care and support I've received at Mental Wellness
-          Haven have been instrumental in my recovery."
+          Heaven have been instrumental in my recovery."
         </SwiperSlide>
         <SwiperSlide>
          " The community support here is amazing. I feel like I belong and am

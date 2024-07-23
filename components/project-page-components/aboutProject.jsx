@@ -212,9 +212,9 @@ const AboutProject = ({ heroImageSrc, attachment, phone }) => {
           className="w-2/5  hover:text-red-500  py-7 flex justify-center items-center gap-3"
         >
           <FaArrowLeft className="prev-arrow transition-all" />
-          <p className="transition-all">Prev post</p>
+          <p className="transition-all">Back</p>
         </Link>
-        <div className="w-1/5 py-7 border-l-2 border-r-2 flex justify-center items-center">
+        {/* <div className="w-1/5 py-7 border-l-2 border-r-2 flex justify-center items-center">
           <FaWindows />
         </div>
         <Link
@@ -225,7 +225,7 @@ const AboutProject = ({ heroImageSrc, attachment, phone }) => {
         >
           <p className="transition-all">Next post</p>
           <FaArrowRight className="next-arrow transition-all " />
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

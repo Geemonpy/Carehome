@@ -57,7 +57,7 @@ const HomePage = () => {
             variants={animationVariants.fadeLeft}
             className="text-6xl max-lg:mx-auto  font-semibold max-sm:text-4xl max-w-lg "
           >
-            Mental Wellness Haven
+            Mental Wellness Heaven
           </motion.h1>
           <motion.p
             variants={animationVariants.fadeLeft}
@@ -152,7 +152,7 @@ const HomePage = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <p className="text-xl">
-                Welcome to Mental Wellness Haven, where we nurture minds and
+                Welcome to Mental Wellness Heaven, where we nurture minds and
                 heal hearts in a compassionate, serene environment. Our
                 dedicated team is committed to supporting your mental well-being
                 with personalized care and empathy.
@@ -219,7 +219,7 @@ const HomePage = () => {
               <WhatWeDoCard
                 iconSrc={"/icons/communication.png"}
                 iconAlt={"communication"}
-                title={"Homes for Living"}
+                title={"Rehabilitation"}
                 desc={"Everything you need to spend your days, your way"}
               />
             </div>

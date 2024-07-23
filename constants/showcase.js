@@ -15,7 +15,7 @@ export const showCase = [
 
       
     ],
-    prevHref: "/projects/6",
+    prevHref: "/",
     nextHref: "/projects/2",
     phone:"020 8239 7518",
   },
@@ -33,7 +33,7 @@ export const showCase = [
      
 
     ],
-    prevHref: "/projects/1",
+    prevHref: "/",
     nextHref: "/projects/3",
     phone:"020 8764 8915"
   },
