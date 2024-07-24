@@ -231,7 +231,7 @@ const AboutPage = () => {
     
 
       {/* appreciation section start */}
-      <div className="bg-white">
+      {/* <div className="bg-white">
         <div
           style={{ maxWidth: 1200 }}
           className="p-10 max-md:px-5 py-28 mx-auto grid grid-cols-2 grid-rows-1 gap-20 max-lg:grid-cols-1 max-lg:grid-rows-2 "
@@ -253,7 +253,7 @@ const AboutPage = () => {
               variants={animationVariants.fadeLeft}
               className="text-2xl"
             >
-              Your Journey to Healing Starts Here
+              The Journey to Healing Starts Here
             </motion.p>
             <motion.div
               variants={animationVariants.fadeLeft}
@@ -269,10 +269,10 @@ const AboutPage = () => {
               </div>
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
+                  35+ 
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in caring
+                  Years of successful experience in caring With CQC
                 </p>
               </div>
             
@@ -309,7 +309,7 @@ const AboutPage = () => {
           </div>
         </div>
      
-      </div>
+      </div> */}
       {/* appreciation section end */}
       {/* review section start */}
       <div className="bg-gray-100">

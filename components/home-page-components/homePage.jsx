@@ -63,7 +63,7 @@ const HomePage = () => {
             variants={animationVariants.fadeLeft}
             className="text-xl max-lg:mx-auto max-w-md  "
           >
-            A Caring Environment for Mental Health Recovery
+            Nurturing the hearts and enriching the souls of individuals
           </motion.p>
           {/* <motion.div
             variants={animationVariants.fadeLeft}
@@ -139,7 +139,7 @@ const HomePage = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <h2 className="text-5xl max-md:text-4xl font-bold title-font">
-                Bighearted Care supporting you to live each day to the full.{" "}
+               Care supporting you to live {" "}
                 {/* <span className=" text-red-500 title-font "> since 1998</span> */}
               </h2>
             </motion.div>
@@ -152,7 +152,7 @@ const HomePage = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <p className="text-xl">
-                Welcome to Mental Wellness Heaven, where we nurture minds and
+                Welcome to Rosemanor Homes, where we nurture minds and
                 heal hearts in a compassionate, serene environment. Our
                 dedicated team is committed to supporting your mental well-being
                 with personalized care and empathy.
@@ -190,14 +190,14 @@ const HomePage = () => {
               always on hand to help. Live purposeful and fulfilling days with a
               supportive arm around your shoulder.
             </p>
-            <Link onClick={scrollToTop} to={"/about"}>
+            {/* <Link onClick={scrollToTop} to={"/about"}>
               <button
                 style={{ borderWidth: 1.5, borderRadius: 4 }}
                 className="bg-transparent  text-black border-red-500 text-xl px-5 py-2 duration-300 hover:bg-red-500 hover:text-white transition-all mt-5 max-md:mt-3"
               >
                 About Us
               </button>
-            </Link>
+            </Link> */}
           </motion.div>
 
           <motion.div
@@ -232,7 +232,7 @@ const HomePage = () => {
                 iconSrc={"/icons/quality-first.png"}
                 iconAlt={"quality-first"}
                 title={"Loved by Residents"}
-                desc={"With a 9.8/10 review score on carehome.co.uk"}
+                desc={"With a 5/5 review score on carehome.co.uk"}
               />
               <div
                 style={{ height: 130 }}
@@ -319,7 +319,7 @@ const HomePage = () => {
           style={{ maxWidth: 1200 }}
           className="mx-auto destination-section p-10 max-md:px-5  pb-28"
         >
-          <motion.h1
+          {/* <motion.h1
             initial="initial"
             whileInView="animate"
             variants={animationVariants.fadeIn}
@@ -327,8 +327,8 @@ const HomePage = () => {
             className="text-5xl max-md:text-4xl font-semibold text-center  px-2"
           >
             Our Care.{" "}
-          </motion.h1>
-          <div className="grid grid-cols-3 grid-rows-1 max-lg:grid-cols-2 max-lg:grid-rows-2 max-sm:grid-cols-1 max-sm:grid-rows-4 gap-4 relative mt-10 max-sm:mt-8">
+          </motion.h1> */}
+          {/* <div className="grid grid-cols-3 grid-rows-1 max-lg:grid-cols-2 max-lg:grid-rows-2 max-sm:grid-cols-1 max-sm:grid-rows-4 gap-4 relative mt-10 max-sm:mt-8">
             <img
               src="/cards-corner.png"
               className="absolute -left-10 -bottom-10 max-xl:hidden"
@@ -368,7 +368,7 @@ const HomePage = () => {
               }
               // href={}
             />
-          </div>
+          </div> */}
         </div>
       </div>
       {/* what we do section end */}
@@ -396,7 +396,7 @@ const HomePage = () => {
               variants={animationVariants.fadeLeft}
               className="text-2xl"
             >
-              Your Journey to Healing Starts Here
+              The Journey to Healing Starts Here
             </motion.p>
             <motion.div
               variants={animationVariants.fadeLeft}
@@ -412,10 +412,10 @@ const HomePage = () => {
               </div>
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
+                  35+
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in caring
+                Years of successful experience in caring With CQC
                 </p>
               </div>
               {/* <div className="flex flex-col max-lg:justify-center max-lg:items-center">
@@ -436,13 +436,19 @@ const HomePage = () => {
               </div> */}
             </motion.div>
             <motion.div variants={animationVariants.fadeLeft}>
-              <Link onClick={scrollToTop} to={"/contact"}>
+
+
+              {/* <Link onClick={scrollToTop} to={"/contact"}> */}
                 <Button
                   content={"Get In Touch"}
                   padding={"px-6 py-3"}
                   fontSize={"text-xl"}
                 />
-              </Link>
+              {/* </Link> */}
+
+
+
+              
             </motion.div>
           </motion.div>
           <div className="w-full max-lg:w-full h-full max-sm:max-h-[500px] ">
@@ -477,7 +483,7 @@ const HomePage = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="text-5xl max-md:text-4xl font-semibold text-center  px-2"
           >
-            Branches{" "}
+              Our Homes{" "}
           </motion.h1>
           <div className="grid grid-cols-4 grid-rows-1 max-lg:grid-cols-2 max-lg:grid-rows-2 max-sm:grid-cols-1 max-sm:grid-rows-4 gap-4 relative mt-10 max-sm:mt-8">
             <img
@@ -500,9 +506,14 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      {/* -------------------------------- */}
+
+
+
       {/* appreciation section end */}
       {/* review section start */}
-      <div className="bg-gray-100">
+      {/* <div className="bg-gray-100">
         <div
           style={{ maxWidth: 1200 }}
           className=" mx-auto flex max-md:flex-col justify-center items-center gap-16 p-10 max-md:px-5 py-28 "
@@ -566,8 +577,14 @@ const HomePage = () => {
             </div>
           </motion.div>
         </div>
-      </div>
+      </div> */}
       {/* review section end */}
+
+
+
+
+      {/* ---------------------------- */}
+      
       {/* partner brand section start */}
       <div className="bg-gray-100 border-t-2 border-black/30  border-dashed">
         <div

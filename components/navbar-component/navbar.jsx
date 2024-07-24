@@ -308,7 +308,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
               className="hover:text-red-500 transition-all"
               to="/about"
             >
-              About
+              About us
             </Link>
             {/* <div
               className="relative cursor-pointer  transition-all"

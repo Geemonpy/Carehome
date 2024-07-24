@@ -181,7 +181,13 @@ const Footer = () => {
               At Rosemanor, we prioritize your mental well-being by providing a
               safe and tranquil space. Our compassionate team is dedicated to
               offering personalized care, ensuring you feel supported and
-              understood every step of the way.
+              understood every step of the way. 
+              <br />
+              General Enquiries<br>
+              </br>
+020 3960 1005 <br />
+Monday-Friday 9am-5pm <br />
+info@wallacealiving.com
             </p>
             <div className="flex text-xl justify-start items-center gap-10 text-red-500">
               <Link target="_blank" to={"https://facebook.com"}>
@@ -226,7 +232,8 @@ const Footer = () => {
             </ul>
           </div>
           <p style={{ color: "#696969" }}>
-            © Rosemanor. All Rights Reserved 2024.
+            © Rosemanor. All Rights Reserved 2024. <br />
+            Rosenmanor  is a Limited Company registered in England  under company number  04433986 and whose registered office is 97 Babington Road, Streatham, London, England, SW16 6AN
           </p>
         </div>
 
@@ -234,7 +241,7 @@ const Footer = () => {
           id="contact"
           className="w-2/4 max-lg:w-full flex flex-col h-auto justify-between items-start gap-10 "
         >
-          <h1 className="text-3xl text-white">Get in Touch</h1>
+          <h1 className="text-3xl text-white">For Placement Enquiries</h1>
           <div className="name w-full gap-8 text-white max-sm:flex-col max-sm:gap-10 mt-3 flex">
             <Input
               pl={3}
