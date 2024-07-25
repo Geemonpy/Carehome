@@ -18,6 +18,18 @@ import { useToast } from "@chakra-ui/react";
 import ServiceCard from "./serviceCard";
 import b1 from '../../public/images/b1.jpeg'
 import home1 from '../../public/images/black1.jpg'
+import bday1 from '../../public/images/bday1.png'
+import bday2 from '../../public/images/bday2.png'
+import gal1 from '../../public/images/gal1.jpg'
+
+import gal2 from '../../public/images/gal2.jpg'
+import gal3 from '../../public/images/gal3.jpg'
+
+import gal4 from '../../public/images/gal4.webp'
+
+
+
+
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -231,7 +243,7 @@ const HomePage = () => {
               <WhatWeDoCard
                 iconSrc={"/icons/quality-first.png"}
                 iconAlt={"quality-first"}
-                title={"Loved by Residents"}
+                title={"Loved by Clients"}
                 desc={"With a 9.8/10 review score on carehome.co.uk"}
               />
               <div
@@ -241,7 +253,7 @@ const HomePage = () => {
             </div>
           </motion.div>
         </div>
-        {/* <div style={{ maxWidth: 1200 }} className="p-10 max-md:px-5 mx-auto">
+        <div style={{ maxWidth: 1200 }} className="p-10 max-md:px-5 mx-auto">
           <motion.h2
             initial="initial"
             whileInView="animate"
@@ -249,13 +261,13 @@ const HomePage = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="text-5xl max-md:text-4xl font-semibold text-center"
           >
-            Exclusive Properties
+            Gallery
           </motion.h2>
           <div className="flex flex-col gap-5 mt-10 max-sm:mt-8">
             <div className=" flex gap-5 max-lg:flex-col">
               <div className="w-2/4 max-lg:w-full">
                 <ExculusivePropertyCard
-                  imgSrc={rentHouses[0].mainImage}
+                  imgSrc={bday1}
                   titlePart1={"House in "}
                   titlePart2={rentHouses[0].name}
                   pricing={rentHouses[0].price}
@@ -265,7 +277,7 @@ const HomePage = () => {
               </div>
               <div className="w-2/4 gap-5 flex max-lg:w-full max-sm:flex-col">
                 <ExculusivePropertyCard
-                  imgSrc={rentHouses[1].mainImage}
+                  imgSrc={bday2}
                   titlePart1={"House in "}
                   titlePart2={rentHouses[1].name}
                   pricing={rentHouses[1].price}
@@ -273,7 +285,7 @@ const HomePage = () => {
                   href={rentHouses[1].id}
                 />
                 <ExculusivePropertyCard
-                  imgSrc={rentHouses[2].mainImage}
+                  imgSrc={gal4}
                   titlePart1={"House in "}
                   titlePart2={rentHouses[2].name}
                   pricing={rentHouses[2].price}
@@ -285,7 +297,7 @@ const HomePage = () => {
             <div className=" flex gap-5 max-lg:flex-col">
               <div className="w-2/4 gap-5 flex max-lg:w-full max-sm:flex-col">
                 <ExculusivePropertyCard
-                  imgSrc={rentHouses[3].mainImage}
+                  imgSrc={gal1}
                   titlePart1={"House in "}
                   titlePart2={rentHouses[3].name}
                   pricing={rentHouses[3].price}
@@ -293,7 +305,7 @@ const HomePage = () => {
                   href={rentHouses[3].id}
                 />
                 <ExculusivePropertyCard
-                  imgSrc={rentHouses[4].mainImage}
+                  imgSrc={gal2}
                   titlePart1={"House in "}
                   titlePart2={rentHouses[4].name}
                   pricing={rentHouses[4].price}
@@ -303,7 +315,7 @@ const HomePage = () => {
               </div>
               <div className="w-2/4 max-lg:w-full">
                 <ExculusivePropertyCard
-                  imgSrc={rentHouses[5].mainImage}
+                  imgSrc={gal3}
                   titlePart1={"House in "}
                   titlePart2={rentHouses[5].name}
                   pricing={rentHouses[5].price}
@@ -313,7 +325,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <div
           style={{ maxWidth: 1200 }}

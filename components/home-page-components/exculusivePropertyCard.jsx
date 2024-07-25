@@ -24,7 +24,7 @@ const ExculusivePropertyCard = ({
         className="absolute w-full h-full object-cover object-center hover transition-all duration-500"
         alt=""
       />
-      <div className="absolute w-full h-full bg-black/50 "></div>
+      <div className="absolute w-full h-full  "></div>
       <motion.div
         initial="initial"
         whileInView="animate"
@@ -34,32 +34,32 @@ const ExculusivePropertyCard = ({
       >
         <div className=""></div>
       </motion.div>
-      <Link
+      {/* <Link
         onClick={scrollToTop}
         className="absolute w-full h-full block "
         to={`/products/${href}`}
-      >
+      > */}
         {/* <a href="" className="absolute w-full h-full block "></a> */}
-      </Link>
-      <Link onClick={scrollToTop} to={`/${type}`}>
+      {/* </Link> */}
+      {/* <Link onClick={scrollToTop} to={`/${type}`}>
         <Button
           content={type}
           fontSize={"text-xl"}
           padding={"px-3  py-0.5"}
           furtherClasses={"tracking-widest absolute top-6 left-6 uppercase"}
         />
-      </Link>
+      </Link> */}
       <div className="flex flex-col gap-3  text-white absolute bottom-6 left-6 right-6 ">
-        <Link
+        {/* <Link
           onClick={scrollToTop}
           to={`/products/${href}`}
           className="text-xl font-medium hover:text-red-500 w-fit transition-all"
         >
           {titlePart1}
           <span className="title-font">{titlePart2}</span>
-        </Link>
-        <hr />
-        <p className="text-lg">{formatCompactNumber(pricing)} PKR/Month</p>
+        </Link> */}
+        {/* <hr /> */}
+        {/* <p className="text-lg">{formatCompactNumber(pricing)} PKR/Month</p> */}
       </div>
     </div>
   );

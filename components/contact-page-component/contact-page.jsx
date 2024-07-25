@@ -559,7 +559,7 @@ const ContactPage = () => {
               <WhatWeDoCard
                 iconSrc={"/icons/quality-first.png"}
                 iconAlt={"quality-first"}
-                title={"Loved by Residents"}
+                title={"Loved by Clients"}
                 desc={"With a 9.8/10 review score on carehome.co.uk"}
               />
               <div
