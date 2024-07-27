@@ -265,7 +265,7 @@ const HomePage = () => {
           >
             Gallery
           </motion.h2>
-          <div className="flex flex-col gap-5 mt-10 max-sm:mt-8">
+          <div className="flex flex-col gap-5 mt-10 max-sm:mt-8" onClick={()=> navigate('/showcases/gallery')}>
             <div className=" flex gap-5 max-lg:flex-col">
               <div className="w-2/4 max-lg:w-full">
                 <ExculusivePropertyCard
