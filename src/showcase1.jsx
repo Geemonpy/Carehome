@@ -1,24 +1,132 @@
 import { useEffect } from "react";
 import Section from "../components/showcase1-components/section";
 import { showCase } from "../constants/showcase";
+import { motion } from "framer-motion";
+
+import gal1 from "../public/images/gallery/g1.jpg";
+import gal2 from "../public/images/gallery/g2.jpg";
+
+import gal3 from "../public/images/gallery/g3.jpg";
+
+import gal4 from "../public/images/gallery/g4.jpg";
+
+import gal5 from "../public/images/gallery/g5.jpg";
+
+import gal6 from "../public/images/gallery/g6.jpg";
+
+import gal7 from "../public/images/gallery/g7.jpg";
+
+import gal8 from "../public/images/gallery/g8.jpg";
+
+// import gal9 from "../public/images/gallery/DSC06584.jpg";
+// import gal10 from "../public/images/gallery/DSC06592.jpg";
+import { animationVariants } from "../constants/animationVariants";
+import ExculusivePropertyCard from "../components/home-page-components/exculusivePropertyCard";
+
+
 const showcase1 = () => {
   useEffect(() => {
     document.title = "Showcase 1 - Rosemanor";
   }, []);
   return (
     <div className="overflow-hidden">
-      {showCase.map((e, i) => {
+      <div className="bg-[url(/showcase2-page-images/showcase2-hero-bg.jpg)] bg-no-repeat bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24 flex justify-center items-center text-white">
+        <motion.h1
+          initial="initial"
+          whileInView="animate"
+          variants={animationVariants.zoomOut}
+          viewport={{ once: true, amount: 0.2 }}
+          className="text-6xl max-sm:text-5xl text-center font-semibold"
+        >
+          Gallery
+        </motion.h1>
+      </div>
+      {/* {showCase.map((e, i) => {
         return (
           <Section
             key={i}
             url={e.coverImage}
-            href={`/projects/${e.id}`}
+            // href={`/projects/${e.id}`}
             title={e.city}
             desc={e.shortDescription}
             attachment={e.id % 2 !== 0 ? "bg-fixed" : ""}
           />
         );
-      })}
+      })} */}
+
+      <div style={{ maxWidth: 1200 }} className="p-10 max-md:px-5 mx-auto">
+        <motion.h2
+          initial="initial"
+          whileInView="animate"
+          variants={animationVariants.fadeIn}
+          viewport={{ once: true, amount: 0.2 }}
+          className="text-5xl max-md:text-4xl font-semibold text-center"
+        >
+          {/* Gallery */}
+        </motion.h2>
+        <div className="flex flex-col gap-5 mt-10 max-sm:mt-8">
+          <div className=" flex gap-5 max-lg:flex-col">
+            <div className="w-2/4 max-lg:w-full">
+              <ExculusivePropertyCard
+                imgSrc={gal1}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[0].name}
+                // pricing={rentHouses[0].price}
+                // type={rentHouses[0].type}
+                // href={rentHouses[0].id}
+              />
+            </div>
+            <div className="w-2/4 gap-5 flex max-lg:w-full max-sm:flex-col">
+              <ExculusivePropertyCard
+                imgSrc={gal2}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[1].name}
+                // pricing={rentHouses[1].price}
+                // // type={rentHouses[1].type}
+                // href={rentHouses[1].id}
+              />
+              <ExculusivePropertyCard
+                imgSrc={gal3}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[2].name}
+                // pricing={rentHouses[2].price}
+                // // type={rentHouses[2].type}
+                // href={rentHouses[2].id}
+              />
+            </div>
+          </div>
+          <div className=" flex gap-5 max-lg:flex-col">
+            <div className="w-2/4 gap-5 flex max-lg:w-full max-sm:flex-col">
+              <ExculusivePropertyCard
+                imgSrc={gal4}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[3].name}
+                // pricing={rentHouses[3].price}
+                // // type={rentHouses[3].type}
+                // href={rentHouses[3].id}
+              />
+              <ExculusivePropertyCard
+                imgSrc={gal5}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[4].name}
+                // pricing={rentHouses[4].price}
+                // // type={rentHouses[4].type}
+                // href={rentHouses[4].id}
+              />
+            </div>
+            <div className="w-2/4 max-lg:w-full">
+              <ExculusivePropertyCard
+                imgSrc={gal6}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[5].name}
+                // pricing={rentHouses[5].price}
+                // // type={rentHouses[5].type}
+                // href={rentHouses[5].id}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

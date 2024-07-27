@@ -57,7 +57,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/showcases/showcase1",
+    path: "/showcases/gallery",
     element: (
       <>
         <NavBar showCase1Page={true} />

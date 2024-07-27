@@ -277,7 +277,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
             <Link
               onClick={scrollToTop}
               className="hover:text-red-500 transition-all"
-              to="/Services"
+              to="/showcases/gallery"
             >
               Gallery
             </Link>
@@ -448,6 +448,20 @@ const NavBar = ({ navBar2, showCase1Page }) => {
           >
             Our Services
           </Link>
+          <Link
+              onClick={scrollToTop}
+              className="hover:text-red-500 transition-all"
+              to="/showcases/news"
+            >
+              News
+            </Link>
+            <Link
+              onClick={scrollToTop}
+              className="hover:text-red-500 transition-all"
+              to="/showcases/gallery"
+            >
+              Gallery
+            </Link>
           <div className="relative">
             {/* <div
               onClick={() => {
