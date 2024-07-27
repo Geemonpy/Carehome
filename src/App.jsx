@@ -68,7 +68,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/showcases/showcase2",
+    path: "/showcases/news",
     element: (
       <>
         <NavBar />

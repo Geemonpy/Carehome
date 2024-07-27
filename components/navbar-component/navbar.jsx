@@ -267,6 +267,20 @@ const NavBar = ({ navBar2, showCase1Page }) => {
             >
               Services
             </Link>
+            <Link
+              onClick={scrollToTop}
+              className="hover:text-red-500 transition-all"
+              to="/showcases/news"
+            >
+              News
+            </Link>
+            <Link
+              onClick={scrollToTop}
+              className="hover:text-red-500 transition-all"
+              to="/Services"
+            >
+              Gallery
+            </Link>
             {/* <div className="showcase-menu cursor-pointer hover:text-red-500 transition-all relative">
               Branches
               <div className="showcase-list hidden absolute cursor-default -left-4 ">
