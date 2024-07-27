@@ -150,8 +150,8 @@ const HomePage = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <h2 className="text-5xl max-md:text-4xl font-bold title-font">
-                Care supporting you to live{" "}
-                {/* <span className=" text-red-500 title-font "> since 1998</span> */}
+              Welcome to Rosemanor Homes
+              {/* <span className=" text-red-500 title-font "> since 1998</span> */}
               </h2>
             </motion.div>
           </div>
@@ -163,10 +163,10 @@ const HomePage = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <p className="text-xl">
-                Welcome to Rosemanor Homes, where we nurture minds and heal
-                hearts in a compassionate, serene environment. Our dedicated
-                team is committed to supporting your mental well-being with
-                personalized care and empathy.
+              At Rosemanor Homes, we are dedicated to nurturing minds and healing hearts in a compassionate and serene environment. Our highly skilled team is committed to providing personalized care and empathetic support, ensuring the highest standards of mental well-being.
+<br />
+{/* <br /> */}
+Discover a place where your mental health is our top priority, and experience the difference that dedicated, compassionate care can make.
               </p>
               <Link onClick={scrollToTop} to={"/about"}>
                 <Button
