@@ -9,16 +9,18 @@ import ReviewCard from "../home-page-components/reviewCard";
 import Carousel from "../home-page-components/carousel";
 import PartnerBrandCard from "../home-page-components/partnerBrandCard";
 import { partnerBrands } from "../../constants/partnerBrands";
-import Showcase2Card from '../showcase2-components/showcase2Card';
+import Showcase2Card from "../showcase2-components/showcase2Card";
 import "./about.css";
 import aboutImg1 from "../../public/images/about1.jpeg";
 import { showCase } from "../../constants/showcase";
-import owner from '../../public/images/owner.jpg'
+import owner from "../../public/images/owner.jpg";
 const AboutPage = () => {
   console.log("an", aboutImg1);
   return (
     <>
-      <div className="bg-[url(aboutImg1)] bg-fixed bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24"         style={{ backgroundImage: `url(${aboutImg1})` }}
+      <div
+        className="bg-[url(aboutImg1)] bg-fixed bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24"
+        style={{ backgroundImage: `url(${aboutImg1})` }}
       >
         <motion.div
           initial="initial"
@@ -31,7 +33,7 @@ const AboutPage = () => {
           <div className="text-white flex flex-col gap-8 max-md:items-center max-md:text-center">
             <h1 className="text-5xl font-bold">Who We Are</h1>
             <p className="text-xl max-w-md">
-            We provide a compassionate environment where minds are nurtured, and hearts are healed.
+              " We provide a compassionate environment where minds are nurtured, and hearts are healed."
             </p>
           </div>
           {/* <div className="flex gap-12 max-sm:text-center text-white">
@@ -58,9 +60,7 @@ const AboutPage = () => {
         >
           <div className="flex w-full gap-10 max-md:flex-col max-md:justify-center max-md:items-center max-md:text-center">
             <div className="flex flex-col items-start justify-center max-md:items-center">
-              <h1 className="text-5xl font-bold title-font w-max">
-                History
-              </h1>
+              <h1 className="text-5xl font-bold title-font w-max">History</h1>
               {/* <Link onClick={scrollToTop} to={"/services"}>
                 <Button
                   content={"Services"}
@@ -78,13 +78,81 @@ const AboutPage = () => {
               />
             </div> */}
           </div>
-          <div className="what-we-do-cards mt-14 gap-8 max-md:grid-cols-1 max-md:grid-rows-3 grid grid-cols-3 grid-rows-1">
-            <div>
+          <div className="what-we-do-cards mt-14 gap-8 max-md:grid-cols-1 max-md: grid grid-cols-1 grid-rows-1">
+            <p className="text-2xl mt-2">
+              <h2 className="text-4xl text-red-500 font-semibold">
+                37 Years of Compassion and Commitment
+              </h2>
+              <br /> <br />
+              Our journey began 37 years ago, fueled by love and a deep sense of
+              purpose. As a family-run business, we’ve dedicated ourselves to
+              providing exceptional care for vulnerable individuals. Their
+              well-being is at the heart of everything we do.
+              <br /> <br />
+              <h2 className="text-4xl text-red-500 font-semibold">
+                A Vision for the Future
+              </h2>{" "}
+              <br /> <br />
+              My vision is simple yet profound: I want our legacy to continue.
+              This service, built with unwavering love, has been tailored for
+              those recovering from enduring mental illness. Our focus?
+              Enablement and wellness, empowering each individual to reclaim
+              their independence within the community.
+              <br />
+              <br />
+              <h2 className="text-4xl text-red-500 font-semibold">
+                From Nursing to Entrepreneurship
+              </h2>
+              <br />
+              <br />
+              My path in care began with training in a children’s hospital,
+              where I learned about learning disabilities. General nursing and
+              mental health followed, shaping my understanding of holistic care.
+              In 1987, I made a pivotal decision: to create our own home—a place
+              where dreams could flourish.
+              <br />
+              <br />
+              <h2 className="text-4xl text-red-500 font-semibold">
+                Expanding Horizons
+              </h2>
+              <br />
+              <br />
+              Four years later, we acquired our second home, catering to the
+              elderly. But our journey didn’t stop there. From 2001 to 2003, we
+              welcomed two more houses, specializing in services for women. In
+              2004, another house joined our family, focusing on mental health
+              support for men.
+              <br />
+              <br />
+              <h2 className="text-4xl text-red-500 font-semibold">
+                Balancing Professionalism and Heart
+              </h2>
+              <br />
+              <br />
+              Today, our organization comprises three companies, each with its
+              own directors. As we grow, I’m committed to maintaining
+              professionalism while never losing sight of compassion. Our
+              business isn’t just about numbers; it’s about changing lives.
+              <br />
+              <br />
+              Thank you for being part of this incredible journey. Together,
+              we’ll continue making a difference—one heart at a time.
+              <br />
+              <br />
+              With gratitude,
+              <br />
+              <br />
+              <h4 className="text-2xl text-black-500 font-bold">
+                Mrs. Parvadee Shumoogam
+              </h4>
+            </p>
+            {/* <div>
               <h2 className="text-4xl text-red-500 font-semibold">
                 Date of Start
               </h2>
               <p className="text-2xl mt-2">
-              The company started on 10 December 2022              </p>
+                The company started on 10 December 2022{" "}
+              </p>
             </div>
             <div>
               <h2 className="text-4xl text-red-500 font-semibold">
@@ -98,7 +166,7 @@ const AboutPage = () => {
             </div>
             <div>
               <h2 className="text-4xl text-red-500 font-semibold">
-              Service Specialize
+                Service Specialize
               </h2>
 
               <p className="text-2xl mt-2">
@@ -106,80 +174,113 @@ const AboutPage = () => {
                 needs of each resident, ensuring tailored support and
                 comprehensive care.
               </p>
-            </div>
+            </div> */}
           </div>
         </motion.div>
       </div>
-
+      <div className="bg-black">
+        <div
+          style={{ maxWidth: 1200 }}
+          className="mx-auto flex max-md:flex-col justify-center items-center max-md:text-center gap-20 max-md:gap-12 p-10 py-28  max-sm:px-5 max-md:py-16  md:pb-36 "
+        >
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            variants={animationVariants.fadeUp}
+            viewport={{ once: true, amount: 0.2 }}
+            className=" w-2/2 max-md:w-full flex flex-col text-white items-start justify-between max-md:items-center"
+          >
+            {/* <h1 className="text-5xl font-bold title-font w-max">
+              What we offer
+            </h1> */}
+            <p className="text-4xl font-bold mt-5">
+             <span className="text-5xl font-bold title-font w-max">“</span> Our legacy is woven with threads of love, tailored for those
+              recovering from enduring mental illness. As we empower individuals
+              toward full independence, let compassion be our compass.<span className="text-5xl font-bold title-font w-max">”</span>
+            </p>
+          </motion.div>
+        </div>
+      </div>
       {/* what we offer section start */}
 
       <div
         style={{ maxWidth: 1200 }}
         className="mx-auto gap-10 grid grid-rows-1 grid-cols-4 max-lg:grid-rows-2 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:grid-rows-4 p-10 max-md:px-5 "
       >
-          <motion.div
-      initial="initial"
-      whileInView="animate"
-      variants={animationVariants.fadeUp}
-      viewport={{ once: true, amount: 0.2 }}
-      style={{ height: 280 }}
-      className="relative w-full mb-5"
-    >
-    
-      <img className="w-full h-full rounded-lg object-cover mb-2" src={owner} alt="img" />
-      <div className=" flex justify-center">
-          <h2 className="title-font text-xl font-semibold mb-1 mr-5">Name</h2> 
-          <p className="text-xl">CEO</p>
-      </div>
-    </motion.div>
-    <motion.div
-      initial="initial"
-      whileInView="animate"
-      variants={animationVariants.fadeUp}
-      viewport={{ once: true, amount: 0.2 }}
-      style={{ height: 280 }}
-      className="relative w-full mb-5"
-    >
-    
-      <img className="w-full h-full rounded-lg object-cover mb-2" src={owner} alt="img" />
-      <div className=" flex justify-center">
-          <h2 className="title-font text-xl font-semibold mb-1 mr-5">Name</h2> 
-          <p className="text-xl">CO</p>
-      </div>
-    </motion.div>
-    <motion.div
-      initial="initial"
-      whileInView="animate"
-      variants={animationVariants.fadeUp}
-      viewport={{ once: true, amount: 0.2 }}
-      style={{ height: 280 }}
-      className="relative w-full mb-5"
-    >
-    
-      <img className="w-full h-full rounded-lg object-cover mb-2" src={owner} alt="img" />
-      <div className=" flex justify-center">
-          <h2 className="title-font text-xl font-semibold mb-1 mr-5">Name</h2> 
-          <p className="text-xl">Operation Head</p>
-      </div>
-    </motion.div>
-    <motion.div
-      initial="initial"
-      whileInView="animate"
-      variants={animationVariants.fadeUp}
-      viewport={{ once: true, amount: 0.2 }}
-      style={{ height: 280 }}
-      className="relative w-full mb-5"
-    >
-    
-      <img className="w-full h-full rounded-xl object-cover mb-2" src={owner} alt="img" />
-      <div className=" flex justify-center">
-          <h2 className="title-font text-xl font-semibold mb-1 mr-5">Name</h2> 
-          <p className="text-xl">Manager</p>
-      </div>
-    </motion.div>
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          variants={animationVariants.fadeUp}
+          viewport={{ once: true, amount: 0.2 }}
+          style={{ height: 280 }}
+          className="relative w-full mb-5"
+        >
+          <img
+            className="w-full h-full rounded-lg object-cover mb-2"
+            src={owner}
+            alt="img"
+          />
+          <div className=" flex justify-center">
+            <h2 className="title-font text-xl font-semibold mb-1 mr-5">Name</h2>
+            <p className="text-xl">CEO</p>
+          </div>
+        </motion.div>
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          variants={animationVariants.fadeUp}
+          viewport={{ once: true, amount: 0.2 }}
+          style={{ height: 280 }}
+          className="relative w-full mb-5"
+        >
+          <img
+            className="w-full h-full rounded-lg object-cover mb-2"
+            src={owner}
+            alt="img"
+          />
+          <div className=" flex justify-center">
+            <h2 className="title-font text-xl font-semibold mb-1 mr-5">Name</h2>
+            <p className="text-xl">CO</p>
+          </div>
+        </motion.div>
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          variants={animationVariants.fadeUp}
+          viewport={{ once: true, amount: 0.2 }}
+          style={{ height: 280 }}
+          className="relative w-full mb-5"
+        >
+          <img
+            className="w-full h-full rounded-lg object-cover mb-2"
+            src={owner}
+            alt="img"
+          />
+          <div className=" flex justify-center">
+            <h2 className="title-font text-xl font-semibold mb-1 mr-5">Name</h2>
+            <p className="text-xl">Operation Head</p>
+          </div>
+        </motion.div>
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          variants={animationVariants.fadeUp}
+          viewport={{ once: true, amount: 0.2 }}
+          style={{ height: 280 }}
+          className="relative w-full mb-5"
+        >
+          <img
+            className="w-full h-full rounded-xl object-cover mb-2"
+            src={owner}
+            alt="img"
+          />
+          <div className=" flex justify-center">
+            <h2 className="title-font text-xl font-semibold mb-1 mr-5">Name</h2>
+            <p className="text-xl">Manager</p>
+          </div>
+        </motion.div>
       </div>
 
-     
       <div className="bg-black">
         <div
           style={{ maxWidth: 1200 }}
@@ -228,7 +329,6 @@ const AboutPage = () => {
           </motion.div>
         </div>
       </div>
-    
 
       {/* appreciation section start */}
       {/* <div className="bg-white">
@@ -324,7 +424,7 @@ const AboutPage = () => {
             transition={{ staggerChildren: 0.1 }}
             className="w-2/4 max-md:w-full max-md:px-3 items-center flex flex-col gap-5"
           >
-             <motion.div
+            <motion.div
               className="w-full ml-6"
               variants={animationVariants.zoomIn}
             >
@@ -336,7 +436,7 @@ const AboutPage = () => {
                 from={"Resident"}
               />
             </motion.div>
-            
+
             <motion.div
               className="w-full ml-6"
               variants={animationVariants.zoomIn}

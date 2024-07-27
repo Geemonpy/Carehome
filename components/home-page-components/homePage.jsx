@@ -16,20 +16,16 @@ import { scrollToTop } from "../../constants/scrollToTop";
 import { partnerBrands } from "../../constants/partnerBrands";
 import { useToast } from "@chakra-ui/react";
 import ServiceCard from "./serviceCard";
-import b1 from '../../public/images/b1.jpeg'
-import home1 from '../../public/images/black1.jpg'
-import bday1 from '../../public/images/bday1.png'
-import bday2 from '../../public/images/bday2.png'
-import gal1 from '../../public/images/gal1.jpg'
+import b1 from "../../public/images/b1.jpeg";
+import home1 from "../../public/images/black1.jpg";
+import bday1 from "../../public/images/bday1.png";
+import bday2 from "../../public/images/bday2.png";
+import gal1 from "../../public/images/gal1.jpg";
 
-import gal2 from '../../public/images/gal2.jpg'
-import gal3 from '../../public/images/gal3.jpg'
+import gal2 from "../../public/images/gal2.jpg";
+import gal3 from "../../public/images/gal3.jpg";
 
-import gal4 from '../../public/images/gal4.webp'
-
-
-
-
+import gal4 from "../../public/images/gal4.webp";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -56,7 +52,10 @@ const HomePage = () => {
   };
   return (
     <div className=" w-full overflow-hidden">
-      <div  className="  flex  pt-36 pb-20 bg-top bg-no-repeat bg-cover h-94  "         style={{ backgroundImage: `url(${home1})` }}      >
+      <div
+        className="  flex  pt-36 pb-20 bg-top bg-no-repeat bg-cover h-94  "
+        style={{ backgroundImage: `url(${home1})` }}
+      >
         <motion.div
           initial="initial"
           whileInView="animate"
@@ -151,7 +150,7 @@ const HomePage = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <h2 className="text-5xl max-md:text-4xl font-bold title-font">
-               Care supporting you to live {" "}
+                Care supporting you to live{" "}
                 {/* <span className=" text-red-500 title-font "> since 1998</span> */}
               </h2>
             </motion.div>
@@ -164,10 +163,10 @@ const HomePage = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <p className="text-xl">
-                Welcome to Rosemanor Homes, where we nurture minds and
-                heal hearts in a compassionate, serene environment. Our
-                dedicated team is committed to supporting your mental well-being
-                with personalized care and empathy.
+                Welcome to Rosemanor Homes, where we nurture minds and heal
+                hearts in a compassionate, serene environment. Our dedicated
+                team is committed to supporting your mental well-being with
+                personalized care and empathy.
               </p>
               <Link onClick={scrollToTop} to={"/about"}>
                 <Button
@@ -198,9 +197,9 @@ const HomePage = () => {
               Love & Care{" "}
             </h2>
             <p className="text-xl">
-              Whatever your needs may be, our proactive and friendly team are
-              always on hand to help. Live purposeful and fulfilling days with a
-              supportive arm around your shoulder.
+              Whatever your needs may be, our proactive and friendly team is
+              always on hand to help you live purposeful and fulfilling days,
+              offering a supportive arm around your shoulders
             </p>
             {/* <Link onClick={scrollToTop} to={"/about"}>
               <button
@@ -226,7 +225,7 @@ const HomePage = () => {
                 }
                 iconAlt={"reliability"}
                 title={"Relationship-Centred"}
-                desc={"You & your loved ones at the heart of everything we do"}
+                desc={"Here’s a more professional and polished version: You and your loved ones are at the heart of everything we do"}
               />
               <WhatWeDoCard
                 iconSrc={"/icons/communication.png"}
@@ -265,7 +264,10 @@ const HomePage = () => {
           >
             Gallery
           </motion.h2>
-          <div className="flex flex-col gap-5 mt-10 max-sm:mt-8" onClick={()=> navigate('/showcases/gallery')}>
+          <div
+            className="flex flex-col gap-5 mt-10 max-sm:mt-8"
+            onClick={() => navigate("/showcases/gallery")}
+          >
             <div className=" flex gap-5 max-lg:flex-col">
               <div className="w-2/4 max-lg:w-full">
                 <ExculusivePropertyCard
@@ -420,16 +422,14 @@ const HomePage = () => {
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
                   1000+
                 </h2>
-                <p className="text-xl">
-                  Happy clients
-                </p>
+                <p className="text-xl">Happy clients</p>
               </div>
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
                   35+
                 </h2>
                 <p className="text-xl">
-                Years of successful experience in caring With CQC
+                  Years of successful experience in caring With CQC
                 </p>
               </div>
               {/* <div className="flex flex-col max-lg:justify-center max-lg:items-center">
@@ -450,19 +450,13 @@ const HomePage = () => {
               </div> */}
             </motion.div>
             <motion.div variants={animationVariants.fadeLeft}>
-
-
               {/* <Link onClick={scrollToTop} to={"/contact"}> */}
-                <Button
-                  content={"Get In Touch"}
-                  padding={"px-6 py-3"}
-                  fontSize={"text-xl"}
-                />
+              <Button
+                content={"Get In Touch"}
+                padding={"px-6 py-3"}
+                fontSize={"text-xl"}
+              />
               {/* </Link> */}
-
-
-
-              
             </motion.div>
           </motion.div>
           <div className="w-full max-lg:w-full h-full max-sm:max-h-[500px] ">
@@ -497,7 +491,7 @@ const HomePage = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="text-5xl max-md:text-4xl font-semibold text-center  px-2"
           >
-              Our Homes{" "}
+            Our Homes{" "}
           </motion.h1>
           <div className="grid grid-cols-4 grid-rows-1 max-lg:grid-cols-2 max-lg:grid-rows-2 max-sm:grid-cols-1 max-sm:grid-rows-4 gap-4 relative mt-10 max-sm:mt-8">
             <img
@@ -522,8 +516,6 @@ const HomePage = () => {
       </div>
 
       {/* -------------------------------- */}
-
-
 
       {/* appreciation section end */}
       {/* review section start */}
@@ -594,11 +586,8 @@ const HomePage = () => {
       </div> */}
       {/* review section end */}
 
-
-
-
       {/* ---------------------------- */}
-      
+
       {/* partner brand section start */}
       <div className="bg-gray-100 border-t-2 border-black/30  border-dashed">
         <div

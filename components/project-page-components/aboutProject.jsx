@@ -121,7 +121,7 @@ const AboutProject = ({ heroImageSrc, attachment, phone }) => {
         <div className="flex flex-col gap-1 mt-4">
           <div className="">
             {project?.id === 1 && (
-              <div style={{ width: "100%" }}>
+              <div style={{width:'100%'}}>
                 <iframe
                   width="100%"
                   height="600"
@@ -129,9 +129,9 @@ const AboutProject = ({ heroImageSrc, attachment, phone }) => {
                   scrolling="no"
                   marginheight="0"
                   marginwidth="0"
-                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Rose%20Manor-+(Rose%20Manor-Hopton)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Rosemanor%201%20Residential%20Care%20Homes,46%20Kempshott%20Rd,%20London%20SW16%205LQ,%20United%20Kingdom+(Rosemanor)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                 >
-                  <a href="https://www.gps.ie/">gps systems</a>
+                  <a href="https://www.gps.ie/">gps tracker sport</a>
                 </iframe>
               </div>
             )}
