@@ -184,7 +184,7 @@ const AboutProject = ({ heroImageSrc, attachment, phone }) => {
         </div>
       </motion.div>
 
-      <div className="grid grid-cols-2 max-md:grid-cols-1">
+      <div className="grid grid-cols-3 max-md:grid-cols-1 gap-2 rounded-xl">
         {project.moreImages.map((e, i) => {
           return (
             <motion.div
@@ -196,7 +196,7 @@ const AboutProject = ({ heroImageSrc, attachment, phone }) => {
             >
               <img
                 className={"w-full object-cover"}
-                style={{ height: 420 }}
+                style={{ height: 620 }}
                 src={e}
                 alt="e"
               />
