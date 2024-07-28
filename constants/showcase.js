@@ -42,7 +42,7 @@ export const showCase = [
   },
   {
     id: 4,
-    city: "NILL",
+    city: "Rose manor residential care home",
     shortDescription:
       "Each resident receives a customized care plan tailored to their unique needs, ensuring they receive the best possible support.",
     description:

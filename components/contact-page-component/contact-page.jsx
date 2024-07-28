@@ -201,7 +201,7 @@ const ContactPage = () => {
           >
             Contact Us
           </motion.h1>
-          <motion.div
+          {/* <motion.div
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, amount: 0.2 }}
@@ -260,7 +260,7 @@ const ContactPage = () => {
                 involved
               </p>
             </motion.div>
-          </motion.div>
+          </motion.div> */}
         </div>
 
         {/* </Reveal> */}
@@ -514,9 +514,9 @@ const ContactPage = () => {
               Love & Care {" "}
             </h2>
             <p className="text-xl">
-              Whatever your needs may be, our proactive and friendly team are
-              always on hand to help. Live purposeful and fulfilling days with a
-              supportive arm around your shoulder.
+            Whatever your needs may be, our proactive and friendly team is
+              always on hand to help you live purposeful and fulfilling days,
+              offering a supportive arm around your shoulders
             </p>
             <Link onClick={scrollToTop} to={"/about"}>
               <button
@@ -542,7 +542,7 @@ const ContactPage = () => {
                 }
                 iconAlt={"reliability"}
                 title={"Relationship-Centred"}
-                desc={"You & your loved ones at the heart of everything we do"}
+                desc={"Here’s a more professional and polished version: You and your loved ones are at the heart of everything we do"}
               />
               <WhatWeDoCard
                 iconSrc={"/icons/communication.png"}

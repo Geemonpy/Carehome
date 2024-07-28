@@ -33,7 +33,8 @@ const AboutPage = () => {
           <div className="text-white flex flex-col gap-8 max-md:items-center max-md:text-center">
             <h1 className="text-5xl font-bold">Who We Are</h1>
             <p className="text-xl max-w-md">
-              " We provide a compassionate environment where minds are nurtured, and hearts are healed."
+              " We provide a compassionate environment where minds are nurtured,
+              and hearts are healed."
             </p>
           </div>
           {/* <div className="flex gap-12 max-sm:text-center text-white">
@@ -178,7 +179,7 @@ const AboutPage = () => {
           </div>
         </motion.div>
       </div>
-      <div className="bg-black">
+      <div className="bg-white">
         <div
           style={{ maxWidth: 1200 }}
           className="mx-auto flex max-md:flex-col justify-center items-center max-md:text-center gap-20 max-md:gap-12 p-10 py-28  max-sm:px-5 max-md:py-16  md:pb-36 "
@@ -188,21 +189,23 @@ const AboutPage = () => {
             whileInView="animate"
             variants={animationVariants.fadeUp}
             viewport={{ once: true, amount: 0.2 }}
-            className=" w-2/2 max-md:w-full flex flex-col text-white items-start justify-between max-md:items-center"
+            className=" w-2/2 max-md:w-full flex flex-col text-black items-start justify-between max-md:items-center"
           >
             {/* <h1 className="text-5xl font-bold title-font w-max">
               What we offer
             </h1> */}
             <p className="text-4xl font-bold mt-5">
-             <span className="text-5xl font-bold title-font w-max">“</span> Our legacy is woven with threads of love, tailored for those
+              <span className="text-5xl font-bold title-font w-max">“</span> Our
+              legacy is woven with threads of love, tailored for those
               recovering from enduring mental illness. As we empower individuals
-              toward full independence, let compassion be our compass.<span className="text-5xl font-bold title-font w-max">”</span>
+              toward full independence, let compassion be our compass.
+              <span className="text-5xl font-bold title-font w-max">”</span>
             </p>
           </motion.div>
         </div>
       </div>
       {/* what we offer section start */}
-
+{/* 
       <div
         style={{ maxWidth: 1200 }}
         className="mx-auto gap-10 grid grid-rows-1 grid-cols-4 max-lg:grid-rows-2 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:grid-rows-4 p-10 max-md:px-5 "
@@ -279,7 +282,7 @@ const AboutPage = () => {
             <p className="text-xl">Manager</p>
           </div>
         </motion.div>
-      </div>
+      </div> */}
 
       <div className="bg-black">
         <div
