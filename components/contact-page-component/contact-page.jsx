@@ -548,7 +548,7 @@ const ContactPage = () => {
                 iconSrc={"/icons/communication.png"}
                 iconAlt={"communication"}
                 title={"Rehabilitation"}
-                desc={"Everything you need to spend your days, your way"}
+                desc={"At Mental Wellness Home, we prioritize your well-being by understanding your needs, communicating clearly, and delivering personalized, reliable care you can trust."}
               />
             </div>
             <div className="flex flex-col gap-7">
@@ -560,7 +560,7 @@ const ContactPage = () => {
                 iconSrc={"/icons/quality-first.png"}
                 iconAlt={"quality-first"}
                 title={"Loved by Clients"}
-                desc={"With a 9.8/10 review score on carehome.co.uk"}
+                desc={" At Mental Wellness Home, we prioritize your well-being by understanding your needs, communicating clearly, and delivering personalized, reliable care you can trust."}
               />
               <div
                 style={{ height: 130 }}

@@ -231,7 +231,7 @@ Discover a place where your mental health is our top priority, and experience th
                 iconSrc={"/icons/communication.png"}
                 iconAlt={"communication"}
                 title={"Rehabilitation"}
-                desc={"Everything you need to spend your days, your way"}
+                desc={"At Mental Wellness Home, we prioritize your well-being by understanding your needs, communicating clearly, and delivering personalized, reliable care you can trust."}
               />
             </div>
             <div className="flex flex-col gap-7">
@@ -243,7 +243,7 @@ Discover a place where your mental health is our top priority, and experience th
                 iconSrc={"/icons/quality-first.png"}
                 iconAlt={"quality-first"}
                 title={"Loved by Clients"}
-                desc={"With a 9.8/10 review score on carehome.co.uk"}
+                desc={"At Mental Wellness Home, we prioritize your well-being by understanding your needs, communicating clearly, and delivering personalized, reliable care you can trust."}
                 // title={"Loved by Residents"}
                 // desc={"With a 5/5 review score on carehome.co.uk"}
               />
@@ -493,7 +493,7 @@ Discover a place where your mental health is our top priority, and experience th
           >
             Our Homes{" "}
           </motion.h1>
-          <div className="grid grid-cols-4 grid-rows-1 max-lg:grid-cols-2 max-lg:grid-rows-2 max-sm:grid-cols-1 max-sm:grid-rows-4 gap-4 relative mt-10 max-sm:mt-8">
+          <div className="grid grid-cols-3 grid-rows-1 max-lg:grid-cols-1 max-lg:grid-rows-1 max-sm:grid-cols-1 max-sm:grid-rows-1 gap-4 relative mt-10 max-sm:mt-8">
             <img
               src="/cards-corner.png"
               className="absolute -left-10 -bottom-10 max-xl:hidden"
