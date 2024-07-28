@@ -548,7 +548,7 @@ const ContactPage = () => {
                 iconSrc={"/icons/communication.png"}
                 iconAlt={"communication"}
                 title={"Rehabilitation"}
-                desc={"At Mental Wellness Home, we prioritize your well-being by understanding your needs, communicating clearly, and delivering personalized, reliable care you can trust."}
+                desc={"At Rosemanor Homes, we are dedicated to providing comprehensive rehabilitation services to support your recovery and enhance your quality of life. Our approach combines specialized therapies and personalized care plans to meet your unique needs"}
               />
             </div>
             <div className="flex flex-col gap-7">
