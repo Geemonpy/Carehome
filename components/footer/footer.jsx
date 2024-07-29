@@ -233,7 +233,7 @@ info@wallacealiving.com
           </div>
           <p style={{ color: "#696969" }}>
             © Rosemanor. All Rights Reserved 2024. <br />
-            Rosenmanor  is a Limited Company registered in England  under company number  04433986 and whose registered office is 97 Babington Road, Streatham, London, England, SW16 6AN
+            Rosenmanor  is a Limited Company registered in England & wales  under company number  04433986 and whose registered office is 97 Babington Road, Streatham, London, England, SW16 6AN
           </p>
         </div>
 
@@ -241,7 +241,8 @@ info@wallacealiving.com
           id="contact"
           className="w-2/4 max-lg:w-full flex flex-col h-auto justify-between items-start gap-10 "
         >
-          <h1 className="text-3xl text-white">For Placement Enquiries</h1>
+          <h1 className="text-3xl text-white"> Placement Enquiries for Women (Ages 18+)</h1> 
+        
           <div className="name w-full gap-8 text-white max-sm:flex-col max-sm:gap-10 mt-3 flex">
             <Input
               pl={3}

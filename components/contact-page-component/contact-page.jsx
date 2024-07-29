@@ -497,8 +497,16 @@ const ContactPage = () => {
         </div>
       </div>
 
+
+
+
+
+
+
+
+
       {/* what we do section start */}
-      <div className="bg-gray-100">
+      {/* <div className="bg-gray-100">
         <div
           style={{ maxWidth: 1200 }}
           className=" mx-auto flex gap-5 justify-between items-start p-10 py-28 max-md:py-16 max-md:px-5 max-lg:flex-col max-lg:items-center  max-lg:gap-12"
@@ -570,6 +578,18 @@ const ContactPage = () => {
           </motion.div>
         </div>
       </div>
+
+
+
+
+ */}
+
+
+
+
+
+
+
       {/* <div
         style={{ maxWidth: 1200 }}
         className=" mx-auto  p-10 py-28 max-md:py-14 max-md:px-5 "
