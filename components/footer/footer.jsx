@@ -85,6 +85,7 @@ const Footer = () => {
         phone: formData?.phoneNo,
         message: formData?.message,
         reply_to: "Reosemanor",
+        subject :"Careers"
         },"nj0Q-d8XDd1R5XVgh");
   
       if (response.status) {

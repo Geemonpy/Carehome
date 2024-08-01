@@ -182,14 +182,14 @@ const AboutPage = () => {
       <div className="bg-white">
         <div
           style={{ maxWidth: 1200 }}
-          className="mx-auto flex max-md:flex-col justify-center items-center max-md:text-center gap-20 max-md:gap-12 p-10 py-28  max-sm:px-5 max-md:py-16  md:pb-36 "
+          className="mx-auto flex max-md:flex-col justify-center items-center max-md:text-center gap-20 max-md:gap-12 p-10   max-sm:px-5 max-md:py-16  md:pb-36 "
         >
           <motion.div
             initial="initial"
             whileInView="animate"
             variants={animationVariants.fadeUp}
             viewport={{ once: true, amount: 0.2 }}
-            className=" w-2/2 max-md:w-full flex flex-col text-black items-start justify-between max-md:items-center"
+            className=" w-3/5 max-md:w-full flex flex-col text-black items-start justify-between max-md:items-center"
           >
             {/* <h1 className="text-5xl font-bold title-font w-max">
               What we offer
@@ -202,10 +202,193 @@ const AboutPage = () => {
               <span className="text-5xl font-bold title-font w-max">”</span>
             </p>
           </motion.div>
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            variants={animationVariants.fadeUp}
+            viewport={{ once: true, amount: 0.2 }}
+            className=" w-2/5 max-md:w-full flex flex-col text-black items-start justify-between max-md:items-center"
+          >
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              variants={animationVariants.fadeUp}
+              viewport={{ once: true, amount: 0.2 }}
+              style={{ height: 250 }}
+              className="relative w-full mt-6"
+            >
+              <img
+                className="w-full h-full rounded-lg object-cover mb-2"
+                src={owner}
+                alt="img"
+              />
+              <div className=" flex justify-center">
+                <h2 className="title-font text-xl font-semibold mb-1 mr-5">
+                  Mrs. Parvadee Shumoogam
+                </h2>
+                <p className="text-xl">CEO</p>
+              </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
+
+      <div className="bg-white">
+        <div
+          style={{ maxWidth: 1200 }}
+          className="mx-auto flex max-md:flex-col justify-center  max-md:text-center gap-15 max-md:gap-12 p-10   max-sm:px-5 max-md:py-16  md:pb-36 "
+        >
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            variants={animationVariants.fadeUp}
+            viewport={{ once: true, amount: 0.2 }}
+            className=" w-1/2 max-md:w-full flex flex-col mt-12 text-black items-start justify-between max-md:items-center"
+          >
+            <h1 className="text-5xl max-md:text-4xl  text-red-500 font-semibold">
+              Why do people love Rosmanor
+            </h1>
+          </motion.div>
+
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            variants={animationVariants.fadeUp}
+            viewport={{ once: true, amount: 0.2 }}
+            className=" w-1/2 max-md:w-full flex flex-col text-black items-start justify-between max-md:items-center"
+          >
+            <div
+              style={{ maxWidth: 1200 }}
+              className="mx-auto flex max-md:flex-col justify-center items-start max-md:text-center gap-6 max-md:gap-12 p-10    "
+            >
+              <motion.div
+                initial="initial"
+                whileInView="animate"
+                variants={animationVariants.fadeUp}
+                viewport={{ once: true, amount: 0.2 }}
+                className=" w-2/5 max-md:w-full flex flex-col text-black items-start justify-between max-md:items-center"
+              >
+                {/* <h1 className="text-5xl font-bold title-font w-max">
+              What we offer
+            </h1> */}
+
+                <motion.div
+                  initial="initial" 
+                  whileInView="animate"
+                  variants={animationVariants.fadeUp}
+                  viewport={{ once: true, amount: 0.2 }}
+                  style={{ height: 180 }}
+                  className="relative w-full mt-2"
+                >
+                  <img
+                    className="w-full h-full rounded-lg object-cover mb-2"
+                    src={owner}
+                    alt="img"
+                  />
+                  {/* <div className=" flex justify-center">
+                <h2 className="title-font text-xl font-semibold mb-1 mr-5">
+                  Mrs. Parvadee Shumoogam
+                </h2>
+                <p className="text-xl">CEO</p>
+              </div> */}
+                </motion.div>
+              </motion.div>
+              <motion.div
+                initial="initial"
+                whileInView="animate"
+                variants={animationVariants.fadeUp}
+                viewport={{ once: true, amount: 0.2 }}
+                className=" w-3/5 max-md:w-full flex flex-col text-black items-start justify-between max-md:items-center"
+              >
+                <div className="w-full">
+
+                  <h1 className=" title-font text-xl font-semibold">Mrs. Parvadee Shumoogam</h1>
+                  <h1 className=" title-font text-xl font-semibold">CEO</h1>
+                  <p>
+                    Mrs. Parvadee Shumoogam is a renowned and experienced
+                    psychologist, counselor, and therapist with a profound
+                    understanding of mental health and the human experience. She
+                    has been providing compassionate and empathetic care to
+                    individuals and families for over 25 years
+                  </p>
+
+
+                  {/* <h1>Mrs. Parvadee Shumoogam</h1> */}
+                </div>
+              </motion.div>
+            </div>
+
+<hr />
+
+            {/*  next */}
+
+
+            <div
+              style={{ maxWidth: 1200 }}
+              className="mx-auto flex max-md:flex-col justify-center items-start max-md:text-center gap-6 max-md:gap-12 p-10    "
+            >
+              <motion.div
+                initial="initial"
+                whileInView="animate"
+                variants={animationVariants.fadeUp}
+                viewport={{ once: true, amount: 0.2 }}
+                className=" w-2/5 max-md:w-full flex flex-col text-black items-start justify-between max-md:items-center"
+              >
+                {/* <h1 className="text-5xl font-bold title-font w-max">
+              What we offer
+            </h1> */}
+
+                <motion.div
+                  initial="initial" 
+                  whileInView="animate"
+                  variants={animationVariants.fadeUp}
+                  viewport={{ once: true, amount: 0.2 }}
+                  style={{ height: 180 }}
+                  className="relative w-full mt-2"
+                >
+                  <img
+                    className="w-full h-full rounded-lg object-cover mb-2"
+                    src={owner}
+                    alt="img"
+                  />
+                  {/* <div className=" flex justify-center">
+                <h2 className="title-font text-xl font-semibold mb-1 mr-5">
+                  Mrs. Parvadee Shumoogam
+                </h2>
+                <p className="text-xl">CEO</p>
+              </div> */}
+                </motion.div>
+              </motion.div>
+              <motion.div
+                initial="initial"
+                whileInView="animate"
+                variants={animationVariants.fadeUp}
+                viewport={{ once: true, amount: 0.2 }}
+                className=" w-3/5 max-md:w-full flex flex-col text-black items-start justify-between max-md:items-center"
+              >
+                <div className="w-full">
+
+                  <h1 className=" title-font text-xl font-semibold">Mrs. Parvadee Shumoogam</h1>
+                  <h1 className=" title-font text-xl font-semibold">CEO</h1>
+                  <p>
+                    Mrs. Parvadee Shumoogam is a renowned and experienced
+                    psychologist, counselor, and therapist with a profound
+                    understanding of mental health and the human experience. She
+                    has been providing compassionate and empathetic care to
+                    individuals and families for over 25 years
+                  </p>
+
+
+                  {/* <h1>Mrs. Parvadee Shumoogam</h1> */}
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
       {/* what we offer section start */}
-{/* 
+      {/* 
       <div
         style={{ maxWidth: 1200 }}
         className="mx-auto gap-10 grid grid-rows-1 grid-cols-4 max-lg:grid-rows-2 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:grid-rows-4 p-10 max-md:px-5 "

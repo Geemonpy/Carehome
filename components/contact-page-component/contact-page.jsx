@@ -13,6 +13,7 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  Checkbox,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { animationVariants } from "../../constants/animationVariants";
@@ -21,10 +22,11 @@ import { Button, Input, Textarea, useToast } from "@chakra-ui/react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../../constants/scrollToTop";
-import emailjs from 'emailjs-com'
+import emailjs from "emailjs-com";
 const ContactPage = () => {
   const toast = useToast();
   const [btnLoader, setBtnLoader] = useState(false);
+  const [subject, setSubject] = useState("");
 
   const showToast = () => {
     toast({
@@ -69,29 +71,34 @@ const ContactPage = () => {
     setBtnLoader(true);
 
     try {
-     const response =await  emailjs.send("service_7y68v5w","template_qdgg4sk",{
-        firstName: formData?.firstName,
-        to_name: "Reosemanor",
-        lastName: formData?.lastName,
-        email: formData?.email,
-        phone: formData?.phoneNo,
-        message: formData?.message,
-        reply_to: "Reosemanor",
-        },"nj0Q-d8XDd1R5XVgh");
-  
+      const response = await emailjs.send(
+        "service_7y68v5w",
+        "template_qdgg4sk",
+        {
+          firstName: formData?.firstName,
+          to_name: "Reosemanor",
+          lastName: formData?.lastName,
+          email: formData?.email,
+          phone: formData?.phoneNo,
+          message: formData?.message,
+          reply_to: "Reosemanor",
+          subject: subject? subject: `Enquiry Form`
+        },
+        "nj0Q-d8XDd1R5XVgh"
+      );
+
       if (response.status) {
         setResult("Form Submitted Successfully");
         // event.target.reset();
         showToast();
-          setFormData({
-            firstName: "",
-            lastName: "",
-            phoneNo: "",
-            email: "",
-            message: "",
-          });
-          setBtnLoader(false);
-
+        setFormData({
+          firstName: "",
+          lastName: "",
+          phoneNo: "",
+          email: "",
+          message: "",
+        });
+        setBtnLoader(false);
       } else {
         setBtnLoader(false);
 
@@ -104,15 +111,15 @@ const ContactPage = () => {
     }
   };
 
-
   const handleSubmit = (e) => {
     const errors = validateForm(formData);
 
     if (errors === false) {
       setBtnLoader(true);
-      axios
-        // .post("https://homyz-server.vercel.app/contact", formData)
-        console.log('f',formData)
+      axios;
+      // .post("https://homyz-server.vercel.app/contact", formData)
+      console
+        .log("f", formData)
         .then((response) => {
           showToast();
           setFormData({
@@ -280,6 +287,47 @@ const ContactPage = () => {
           style={{ boxShadow: "0 20px 50px rgba(0, 43, 86, .1)" }}
           className="w-1/2 max-lg:w-full p-6 py-7 rounded-md flex flex-col h-auto justify-between items-start gap-5"
         >
+          {/* <div className="w-full"></div> */}
+          <div className="flex">
+            {" "}
+            <Checkbox
+              onChange={(e) => {
+                if (e) {
+                  setSubject("Make An Enquiry");
+                } else {
+                  setSubject("");
+                }
+              
+              }}
+              checked={subject === 'Make An Enquiry'}
+            />{" "}
+            <span className=" mx-2 text-lg"> Make an enquiry</span>
+          </div>
+          <div className="flex">
+            {" "}
+            <Checkbox
+            checked={true}
+             onChange={(e) => {
+              if (e) {
+                setSubject("Careers");
+              } else {
+                setSubject("");
+              }
+            }}
+            /> <span className=" mx-2 text-lg ">Careers</span>
+          </div>
+          <div className="flex">
+            {" "}
+            <Checkbox  
+             onChange={(e) => {
+              if (e) {
+                setSubject("Book a visit");
+              } else {
+                setSubject("");
+              }
+            }}
+            /> <span className=" mx-2 text-lg"> Book a visit</span>
+          </div>
           <div className="name w-full gap-5 text-white max-sm:flex-col flex">
             <Input
               pl={3}
@@ -408,8 +456,10 @@ const ContactPage = () => {
               <div>
                 <FaEnvelope className="text-red-500" />
               </div>
-              <p> Rose Manor
-               18 Bensham Manor Rd, Thornton Heath CR7 7AA, United Kingdom
+              <p>
+                {" "}
+                Rose Manor 18 Bensham Manor Rd, Thornton Heath CR7 7AA, United
+                Kingdom
               </p>
             </div>
             <div className="flex  gap-3 text-xl items-center">
@@ -449,11 +499,12 @@ const ContactPage = () => {
                 className="max-w-xl max-lg:max-w-lg max-sm:w-full text-center"
               >
                 <h1 className="text-[46px] max-lg:text-4xl max-sm:text-[34px] max-[500px]:text-3xl leading-tight font-semibold">
-                Caring for Your 
+                  Caring for Your
                   <br /> Mental Well-being
                 </h1>
                 <p className="text-xl mt-3">
-                Our dedicated team is committed to caring for your mental well-being with utmost compassion and expertise.
+                  Our dedicated team is committed to caring for your mental
+                  well-being with utmost compassion and expertise.
                 </p>
               </motion.div>
             </div>
@@ -511,10 +562,10 @@ const ContactPage = () => {
             className="w-1/3 max-lg:w-full max-lg:text-center flex flex-col gap-2 items-start max-lg:items-center"
           >
             <h2 className="text-5xl max-md:text-4xl font-bold title-font">
-              Love & Care {" "}
+              Love & Care{" "}
             </h2>
             <p className="text-xl">
-            Whatever your needs may be, our proactive and friendly team is
+              Whatever your needs may be, our proactive and friendly team is
               always on hand to help you live purposeful and fulfilling days,
               offering a supportive arm around your shoulders
             </p>
@@ -542,13 +593,17 @@ const ContactPage = () => {
                 }
                 iconAlt={"reliability"}
                 title={"Relationship-Centred"}
-                desc={"Here’s a more professional and polished version: You and your loved ones are at the heart of everything we do"}
+                desc={
+                  "Here’s a more professional and polished version: You and your loved ones are at the heart of everything we do"
+                }
               />
               <WhatWeDoCard
                 iconSrc={"/icons/communication.png"}
                 iconAlt={"communication"}
                 title={"Rehabilitation"}
-                desc={"At Rosemanor Homes, we are dedicated to providing comprehensive rehabilitation services to support your recovery and enhance your quality of life. Our approach combines specialized therapies and personalized care plans to meet your unique needs"}
+                desc={
+                  "At Rosemanor Homes, we are dedicated to providing comprehensive rehabilitation services to support your recovery and enhance your quality of life. Our approach combines specialized therapies and personalized care plans to meet your unique needs"
+                }
               />
             </div>
             <div className="flex flex-col gap-7">
@@ -560,7 +615,9 @@ const ContactPage = () => {
                 iconSrc={"/icons/quality-first.png"}
                 iconAlt={"quality-first"}
                 title={"Loved by Clients"}
-                desc={" At Mental Wellness Home, we prioritize your well-being by understanding your needs, communicating clearly, and delivering personalized, reliable care you can trust."}
+                desc={
+                  " At Mental Wellness Home, we prioritize your well-being by understanding your needs, communicating clearly, and delivering personalized, reliable care you can trust."
+                }
               />
               <div
                 style={{ height: 130 }}
