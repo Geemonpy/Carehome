@@ -267,13 +267,13 @@ const NavBar = ({ navBar2, showCase1Page }) => {
             >
               Services
             </Link>
-            <Link
+            {/* <Link
               onClick={scrollToTop}
               className="hover:text-red-500 transition-all"
               to="/showcases/news"
             >
               News
-            </Link>
+            </Link> */}
             <Link
               onClick={scrollToTop}
               className="hover:text-red-500 transition-all"

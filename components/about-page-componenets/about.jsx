@@ -598,6 +598,15 @@ const AboutPage = () => {
       </div> */}
       {/* appreciation section end */}
       {/* review section start */}
+
+
+
+
+
+
+
+
+{/* 
       <div className="bg-gray-100">
         <div
           style={{ maxWidth: 1200 }}
@@ -700,6 +709,11 @@ const AboutPage = () => {
           </motion.div>
         </div>
       </div>
+
+
+
+ */}
+
       {/* review section end */}
       {/* partner brand section start */}
       <div className="bg-gray-100 border-t-2 border-black/30  border-dashed">
