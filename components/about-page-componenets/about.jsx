@@ -246,7 +246,7 @@ const AboutPage = () => {
             className=" w-1/2 max-md:w-full flex flex-col mt-12 text-black items-start justify-between max-md:items-center"
           >
             <h1 className="text-5xl max-md:text-4xl  text-red-500 font-semibold">
-              Why do people love Rosmanor
+TIME TO MEET THE TEAM
             </h1>
           </motion.div>
 
