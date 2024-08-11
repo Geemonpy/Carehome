@@ -81,7 +81,37 @@ const AboutPage = () => {
           </div>
           <div className="what-we-do-cards mt-14 gap-8 max-md:grid-cols-1 max-md: grid grid-cols-1 grid-rows-1">
             <p className="text-2xl mt-2">
-              <h2 className="text-4xl text-red-500 font-semibold">
+              Rosemanor Homes was founded in 1987 by Ms. Parvadee Shumoogam, a
+              visionary and passionate advocate for high-quality residential
+              care. Driven by her commitment to creating a nurturing and
+              supportive environment for adults needing care, Ms. Shumoogam
+              opened the first Rosemanor. Her goal was to go beyond the
+              traditional care home model and establish a place where residents
+              would feel truly at home, receiving personalized care in a warm
+              and welcoming setting.<br></br>
+              <br /> The reputation of Rosemanor Homes for providing
+              compassionate and exceptional care quickly grew. By 2001-2003, the
+              demand for Rosemanor’s unique approach to care led to the
+              expansion of the organization. Ms. Shumoogam oversaw the
+              establishment of two additional homes, each meticulously designed
+              to replicate the comforting and familial atmosphere of the
+              original Rosemanor Home. These new facilities allowed Rosemanor to
+              offer its specialized services, including tailored care plans for
+              adults with diverse needs, to a larger community.Ms. Shumoogam's
+              dedication was recognized with numerous industry awards,
+              solidifying Rosemanor's reputation as a top-tier care provider.
+              <br />
+              <br />
+              From 2015 onwards, Rosemanor Homes placed a strong emphasis on
+              community engagement and outreach. Programs were developed to
+              foster connections between residents and the wider community,
+              enhancing the social well-being of those in care. Volunteer
+              initiatives, family involvement programs, and intergenerational
+              activities became integral parts of the Rosemanor experience.
+              These efforts helped create a vibrant, inclusive community where
+              residents could build meaningful relationships and stay connected
+              with the world around them.
+              {/* <h2 className="text-4xl text-red-500 font-semibold">
                 37 Years of Compassion and Commitment
               </h2>
               <br /> <br />
@@ -145,7 +175,7 @@ const AboutPage = () => {
               <br />
               <h4 className="text-2xl text-black-500 font-bold">
                 Mrs. Parvadee Shumoogam
-              </h4>
+              </h4> */}
             </p>
             {/* <div>
               <h2 className="text-4xl text-red-500 font-semibold">
@@ -243,10 +273,10 @@ const AboutPage = () => {
             whileInView="animate"
             variants={animationVariants.fadeUp}
             viewport={{ once: true, amount: 0.2 }}
-            className=" w-1/2 max-md:w-full flex flex-col mt-12 text-black items-start justify-between max-md:items-center"
+            className=" w-1/1 max-md:w-full flex flex-col mt-12 text-black items-start justify-between max-md:items-center"
           >
             <h1 className="text-5xl max-md:text-4xl  text-red-500 font-semibold">
-TIME TO MEET THE TEAM
+              TIME TO MEET THE TEAM
             </h1>
           </motion.div>
 
@@ -255,7 +285,7 @@ TIME TO MEET THE TEAM
             whileInView="animate"
             variants={animationVariants.fadeUp}
             viewport={{ once: true, amount: 0.2 }}
-            className=" w-1/2 max-md:w-full flex flex-col text-black items-start justify-between max-md:items-center"
+            className=" w-1/1 max-md:w-full flex flex-col text-black items-start justify-between max-md:items-center"
           >
             <div
               style={{ maxWidth: 1200 }}
@@ -273,7 +303,7 @@ TIME TO MEET THE TEAM
             </h1> */}
 
                 <motion.div
-                  initial="initial" 
+                  initial="initial"
                   whileInView="animate"
                   variants={animationVariants.fadeUp}
                   viewport={{ once: true, amount: 0.2 }}
@@ -301,27 +331,36 @@ TIME TO MEET THE TEAM
                 className=" w-3/5 max-md:w-full flex flex-col text-black items-start justify-between max-md:items-center"
               >
                 <div className="w-full">
-
-                  <h1 className=" title-font text-xl font-semibold">Mrs. Parvadee Shumoogam</h1>
+                  <h1 className=" title-font text-xl font-semibold">
+                    Mr Krishna Shumoogam
+                  </h1>
                   <h1 className=" title-font text-xl font-semibold">CEO</h1>
                   <p>
-                    Mrs. Parvadee Shumoogam is a renowned and experienced
-                    psychologist, counselor, and therapist with a profound
-                    understanding of mental health and the human experience. She
-                    has been providing compassionate and empathetic care to
-                    individuals and families for over 25 years
+                    At Rosemanor, mental health care is a cornerstone of our
+                    mission to provide comprehensive and exemplary support. I am
+                    immensely proud of the depth and breadth of our mental
+                    health programs, which are meticulously crafted to meet the
+                    complex psychological and emotional needs of our residents.
+                    Our approach is distinguished by the integration of advanced
+                    stress management techniques, evidence-based therapeutic
+                    interventions, and personalized counseling, all tailored to
+                    foster emotional stability and enhance overall well-being.
+                    Leading Rosemanor, I am consistently impressed by our team’s
+                    unwavering dedication and professional expertise. Their
+                    commitment not only meets but surpasses the highest
+                    standards in mental health care, ensuring that every
+                    resident can thrive in an environment designed for their
+                    success and fulfillment.
                   </p>
-
 
                   {/* <h1>Mrs. Parvadee Shumoogam</h1> */}
                 </div>
               </motion.div>
             </div>
 
-<hr />
+            <hr />
 
             {/*  next */}
-
 
             <div
               style={{ maxWidth: 1200 }}
@@ -339,7 +378,7 @@ TIME TO MEET THE TEAM
             </h1> */}
 
                 <motion.div
-                  initial="initial" 
+                  initial="initial"
                   whileInView="animate"
                   variants={animationVariants.fadeUp}
                   viewport={{ once: true, amount: 0.2 }}
@@ -367,17 +406,90 @@ TIME TO MEET THE TEAM
                 className=" w-3/5 max-md:w-full flex flex-col text-black items-start justify-between max-md:items-center"
               >
                 <div className="w-full">
-
-                  <h1 className=" title-font text-xl font-semibold">Mrs. Parvadee Shumoogam</h1>
-                  <h1 className=" title-font text-xl font-semibold">CEO</h1>
+                  <h1 className=" title-font text-xl font-semibold">
+                    Mr selven shumoogam
+                  </h1>
+                  <h1 className=" title-font text-xl font-semibold">CCO</h1>
                   <p>
-                    Mrs. Parvadee Shumoogam is a renowned and experienced
-                    psychologist, counselor, and therapist with a profound
-                    understanding of mental health and the human experience. She
-                    has been providing compassionate and empathetic care to
-                    individuals and families for over 25 years
+                    Reflecting on the past year at Rosemanor Homes, I am deeply
+                    impressed by the unwavering commitment and professionalism
+                    demonstrated by our dedicated team. Their relentless efforts
+                    have been pivotal in advancing our mission to provide
+                    exceptional mental health care. I am immensely proud of the
+                    profound impact they have had on supporting our residents in
+                    leading fulfilling and enriched lives. Their dedication is
+                    the cornerstone of our success and continues to inspire
+                    excellence in everything we do.
                   </p>
 
+                  {/* <h1>Mrs. Parvadee Shumoogam</h1> */}
+                </div>
+              </motion.div>
+            </div>
+            <div
+              style={{ maxWidth: 1200 }}
+              className="mx-auto flex max-md:flex-col justify-center items-start max-md:text-center gap-6 max-md:gap-12 p-10    "
+            >
+              <motion.div
+                initial="initial"
+                whileInView="animate"
+                variants={animationVariants.fadeUp}
+                viewport={{ once: true, amount: 0.2 }}
+                className=" w-2/5 max-md:w-full flex flex-col text-black items-start justify-between max-md:items-center"
+              >
+                {/* <h1 className="text-5xl font-bold title-font w-max">
+              What we offer
+            </h1> */}
+
+                <motion.div
+                  initial="initial"
+                  whileInView="animate"
+                  variants={animationVariants.fadeUp}
+                  viewport={{ once: true, amount: 0.2 }}
+                  style={{ height: 180 }}
+                  className="relative w-full mt-2"
+                >
+                  <img
+                    className="w-full h-full rounded-lg object-cover mb-2"
+                    src={owner}
+                    alt="img"
+                  />
+                  {/* <div className=" flex justify-center">
+                <h2 className="title-font text-xl font-semibold mb-1 mr-5">
+                  Mrs. Parvadee Shumoogam
+                </h2>
+                <p className="text-xl">CEO</p>
+              </div> */}
+                </motion.div>
+              </motion.div>
+              <motion.div
+                initial="initial"
+                whileInView="animate"
+                variants={animationVariants.fadeUp}
+                viewport={{ once: true, amount: 0.2 }}
+                className=" w-3/5 max-md:w-full flex flex-col text-black items-start justify-between max-md:items-center"
+              >
+                <div className="w-full">
+                  <h1 className=" title-font text-xl font-semibold">
+                    Ms Vadee Shumoogam{" "}
+                  </h1>
+                  <h1 className=" title-font text-xl font-semibold">
+                    Founder and registered manager
+                  </h1>
+                  <p>
+                    As the Registered Manager and Founder of Rosemanor Homes, I
+                    take immense pride in leading a team that is passionately
+                    committed to exceptional mental health care. For us, mental
+                    health care is not just a profession—it’s a driving passion
+                    that motivates us every day.<br/> We are dedicated to creating a
+                    supportive and empowering environment, combining
+                    professional expertise with genuine compassion. The positive
+                    feedback from our residents and their families confirms the
+                    effectiveness of our approach and inspires us to
+                    continuously strive for excellence.Together, we are
+                    dedicated to delivering high-quality care and making a
+                    meaningful difference in the lives of our residents.
+                  </p>
 
                   {/* <h1>Mrs. Parvadee Shumoogam</h1> */}
                 </div>
@@ -599,14 +711,7 @@ TIME TO MEET THE TEAM
       {/* appreciation section end */}
       {/* review section start */}
 
-
-
-
-
-
-
-
-{/* 
+      {/* 
       <div className="bg-gray-100">
         <div
           style={{ maxWidth: 1200 }}

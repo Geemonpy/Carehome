@@ -240,7 +240,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
           <Link onClick={scrollToTop} to="/">
             <img
               src={rlogo}
-              className="w-44 h-33 max-lg:w-50"
+              className="w-48 h-35 max-lg:w-50"
               alt="Homyz-logo"
             />
           </Link>
