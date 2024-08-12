@@ -58,7 +58,7 @@ const ServicesComponent = () => {
             />
           );
         })} */}
-        {/* <ServiceCard
+        <ServiceCard
           key={1}
           title={"Community Support"}
           brief={
@@ -93,8 +93,8 @@ const ServicesComponent = () => {
           }
           id={3}
           //  iconSrc={e.icon}
-        /> */}
-        <motion.div
+        />
+        {/* <motion.div
           initial="initial"
           whileInView="animate"
           variants={animationVariants.fadeUp}
@@ -173,7 +173,7 @@ const ServicesComponent = () => {
               experiences.
             </p>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </>
   );

@@ -31,10 +31,19 @@ const AboutPage = () => {
           className="flex gap-10 justify-between items-end max-md:items-center px-10 mx-auto max-md:px-5 max-md:flex-col"
         >
           <div className="text-white flex flex-col gap-8 max-md:items-center max-md:text-center">
-            <h1 className="text-5xl font-bold">Who We Are</h1>
+            {/* <h1 className="text-5xl font-bold">Who We Are</h1>
             <p className="text-xl max-w-md">
               " We provide a compassionate environment where minds are nurtured,
               and hearts are healed."
+            </p> */}
+            <h1 className="text-5xl font-bold">Our commitment</h1>
+            <p className="text-xl max-w-md">
+              " We are dedicated to making a positive impact in the lives of our
+              residents, providing them with the care and support they need to
+              lead fulfilling lives. By focusing on compassion, excellence,
+              innovation, safety, and community, we strive to be the preferred
+              care home, known for our unwavering commitment to the happiness
+              and well-being of those we serve."
             </p>
           </div>
           {/* <div className="flex gap-12 max-sm:text-center text-white">
@@ -481,14 +490,15 @@ const AboutPage = () => {
                     take immense pride in leading a team that is passionately
                     committed to exceptional mental health care. For us, mental
                     health care is not just a profession—it’s a driving passion
-                    that motivates us every day.<br/> We are dedicated to creating a
-                    supportive and empowering environment, combining
-                    professional expertise with genuine compassion. The positive
-                    feedback from our residents and their families confirms the
-                    effectiveness of our approach and inspires us to
-                    continuously strive for excellence.Together, we are
-                    dedicated to delivering high-quality care and making a
-                    meaningful difference in the lives of our residents.
+                    that motivates us every day.
+                    <br /> We are dedicated to creating a supportive and
+                    empowering environment, combining professional expertise
+                    with genuine compassion. The positive feedback from our
+                    residents and their families confirms the effectiveness of
+                    our approach and inspires us to continuously strive for
+                    excellence.Together, we are dedicated to delivering
+                    high-quality care and making a meaningful difference in the
+                    lives of our residents.
                   </p>
 
                   {/* <h1>Mrs. Parvadee Shumoogam</h1> */}
@@ -626,6 +636,102 @@ const AboutPage = () => {
             </div>
           </motion.div>
         </div>
+      </div>
+      <div>
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          variants={animationVariants.fadeUp}
+          viewport={{ once: true, amount: 0.2 }}
+          style={{ maxWidth: 1200 }}
+          className="mx-auto  p-10 py-28  max-sm:px-5 max-md:py-16 "
+        >
+          <div className="flex w-full gap-10 max-md:flex-col max-md:justify-center max-md:items-center max-md:text-center">
+            <div className="flex flex-col items-start justify-center max-md:items-center">
+              <h1 className="text-5xl font-bold title-font w-max">
+                Today and Beyond
+              </h1>
+            </div>
+          </div>
+          <div className="what-we-do-cards mt-14 gap-8 max-md:grid-cols-1 max-md: grid grid-cols-1 grid-rows-1">
+            <p className="text-2xl mt-2">
+              Today, Rosemanor Homes operates three care homes across the
+              region, each upholding the founding principles of compassion,
+              excellence, and community. The dedicated staff at Rosemanor
+              ensures that every resident feels valued, respected, and at home.
+              The homes offer a range of services tailored to meet the unique
+              needs of each resident, including specialized care for adults with
+              various conditions and challenges. <br />
+              <br />
+              As we look to the future, Rosemanor Homes continues to innovate
+              and adapt to meet the evolving needs of the adult care community.
+              With plans for further expansion and the integration of
+              cutting-edge care practices, we remain committed to setting the
+              standard for residential care and enriching the lives of our
+              residents.
+            </p>
+            <h2 className="text-4xl text-red-500 font-semibold">
+              Exceptional Personalised Care
+            </h2>
+            <p className="text-2xl mt-1">
+              At Rosemanor, we are dedicated to redefining adult care through
+              highly personalized attention. Our custom care plans are designed
+              to address each individual's specific needs and preferences,
+              ensuring a tailored approach to their well-being. We emphasize
+              delivering outstanding service in a compassionate and respectful
+              environment, striving to enhance the quality of life for every
+              resident with dignity and care.
+            </p>
+            <br /> <br />
+            <h2 className="text-4xl text-red-500 font-semibold">
+              DEMENTIA CARE
+            </h2>
+            <p className="text-2xl mt-1">
+              our team of highly trained and experienced professionals excels in
+              dementia care, employing evidence-based approaches and advanced
+              methodologies to address the complex needs associated with
+              dementia. Our expertise in cognitive support and behavioral
+              management allows us to deliver individualized care plans that
+              effectively enhance residents' quality of life.
+              <br />
+              We are committed to a person-centered care model, meticulously
+              assessing and respecting each individual’s cognitive abilities and
+              personal preferences. At Rosemanor, we cultivate a secure,
+              therapeutic environment that supports mental and emotional
+              well-being, ensuring that each day is meaningful and enriching
+              through targeted interventions and compassionate care strategies.
+            </p>
+            <br /> <br />
+            <h2 className="text-4xl text-red-500 font-semibold">
+              RESIDENTIAL CARE
+            </h2>
+            <p className="text-2xl mt-1">
+              At Rosemanor, residents benefit from spacious, elegantly designed
+              rooms that offer a blend of comfort and privacy. Our thoughtfully
+              arranged lounges provide inviting spaces for relaxation and social
+              interaction, fostering a vibrant sense of community.
+              <br />
+              Our dedicated activity room serves as a dynamic center for a
+              diverse array of daily programs. From engaging crafts to
+              stimulating games, it is designed to cater to varied interests,
+              enhancing residents' engagement and enriching their daily
+              experiences.
+            </p>
+            <br /> <br />
+            <h2 className="text-4xl text-red-500 font-semibold">
+              MENTAL HEALTH CARE{" "}
+            </h2>
+            <p className="text-2xl mt-1">
+              To enhance mental health, we provide a variety of programs
+              tailored to individual needs. Our wellness center features
+              resources for stress management, including guided meditation,
+              fitness classes, and personalized counseling. These initiatives
+              are designed to support emotional balance, promote resilience, and
+              encourage a positive, fulfilling daily experience.
+            </p>
+            <br /> <br />
+          </div>
+        </motion.div>
       </div>
 
       {/* appreciation section start */}
