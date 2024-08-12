@@ -3,11 +3,14 @@ import ServiceCard from "./serviceCard";
 import { servicesData } from "../../constants/servicesData";
 import { motion } from "framer-motion";
 import { animationVariants } from "../../constants/animationVariants";
-import serviceimg from '../../public/images/black2.jpg'
+import serviceimg from "../../public/images/black2.jpg";
 const ServicesComponent = () => {
   return (
     <>
-      <div style={{ backgroundImage: `url(${serviceimg})` }}  className=" bg-fixed bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24 ">
+      <div
+        style={{ backgroundImage: `url(${serviceimg})` }}
+        className=" bg-fixed bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24 "
+      >
         <motion.div
           initial="initial"
           whileInView="animate"
@@ -36,7 +39,7 @@ const ServicesComponent = () => {
               <h2 className="text-4xl  title-font font-bold">5000+</h2>
               <p className="text-lg">Premium houses</p>
             </div> */}
-          {/* </div> */} 
+          {/* </div> */}
         </motion.div>
       </div>
       <div
@@ -55,7 +58,7 @@ const ServicesComponent = () => {
             />
           );
         })} */}
-        <ServiceCard
+        {/* <ServiceCard
           key={1}
           title={"Community Support"}
           brief={
@@ -90,7 +93,87 @@ const ServicesComponent = () => {
           }
           id={3}
           //  iconSrc={e.icon}
-        />
+        /> */}
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          variants={animationVariants.fadeUp}
+          viewport={{ once: true, amount: 0.2 }}
+          style={{ height: 600 }}
+          className="service-card w-full relative"
+        >
+          <div className="w-full h-full absolute bg-red-500 shadow-lg rounded-xl"></div>
+          <div className=" px-4 w-full h-full absolute text-white bg-red-500 transition-all shadow-lg rounded-xl duration-500 flex flex-col justify-center items-center gap-2">
+            <h2 className=" text-3xl title-font font-semibold  transition-all duration-200">
+              {"DEMENTIA CARE"}
+            </h2>
+            <p className=" text-xl mt-5 max-w-md text-center scale-y-100 opacity-100 transition-all duration-75 origin-top">
+              our team of highly trained and experienced professionals excels in
+              dementia care, employing evidence-based approaches and advanced
+              methodologies to address the complex needs associated with
+              dementia. Our expertise in cognitive support and behavioral
+              management allows us to deliver individualized care plans that
+              effectively enhance residents' quality of life.
+              <br />
+              We are committed to a person-centered care model, meticulously
+              assessing and respecting each individual’s cognitive abilities and
+              personal preferences. At Rosemanor, we cultivate a secure,
+              therapeutic environment that supports mental and emotional
+              well-being, ensuring that each day is meaningful and enriching
+              through targeted interventions and compassionate care strategies.
+            </p>
+          </div>
+        </motion.div>
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          variants={animationVariants.fadeUp}
+          viewport={{ once: true, amount: 0.2 }}
+          style={{ height: 600 }}
+          className="service-card w-full relative"
+        >
+          <div className="w-full h-full absolute bg-red-500 shadow-lg rounded-xl"></div>
+          <div className=" px-4 w-full h-full absolute text-white bg-red-500 transition-all shadow-lg rounded-xl duration-500 flex flex-col justify-center items-center gap-2">
+            <h2 className=" text-3xl title-font font-semibold  transition-all duration-200">
+              {"Mental Health care"}
+            </h2>
+            <p className=" text-xl mt-5 max-w-md text-center scale-y-100 opacity-100 transition-all duration-75 origin-top">
+              To enhance mental health, we provide a variety of programs
+              tailored to individual needs. Our wellness center features
+              resources for stress management, including guided meditation,
+              fitness classes, and personalized counseling. These initiatives
+              are designed to support emotional balance, promote resilience, and
+              encourage a positive, fulfilling daily experience.
+            </p>
+          </div>
+        </motion.div>
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          variants={animationVariants.fadeUp}
+          viewport={{ once: true, amount: 0.2 }}
+          style={{ height: 600 }}
+          className="service-card w-full relative"
+        >
+          <div className="w-full h-full absolute bg-red-500 shadow-lg rounded-xl"></div>
+          <div className=" px-4 w-full h-full absolute text-white bg-red-500 transition-all shadow-lg rounded-xl duration-500 flex flex-col justify-center items-center gap-2">
+            <h2 className=" text-3xl title-font font-semibold  transition-all duration-200">
+              {"RESIDENTIAL CARE"}
+            </h2>
+            <p className=" text-xl mt-5 max-w-md text-center scale-y-100 opacity-100 transition-all duration-75 origin-top">
+              At Rosemanor, residents benefit from spacious, elegantly designed
+              rooms that offer a blend of comfort and privacy. Our thoughtfully
+              arranged lounges provide inviting spaces for relaxation and social
+              interaction, fostering a vibrant sense of community.
+              <br />
+              Our dedicated activity room serves as a dynamic center for a
+              diverse array of daily programs. From engaging crafts to
+              stimulating games, it is designed to cater to varied interests,
+              enhancing residents' engagement and enriching their daily
+              experiences.
+            </p>
+          </div>
+        </motion.div>
       </div>
     </>
   );
