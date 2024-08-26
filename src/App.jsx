@@ -14,6 +14,9 @@ import Featured from "../components/featured-&-popluar-page-component/featrued";
 import Popular from "../components/featured-&-popluar-page-component/popluar";
 import Contact from "./contact";
 import Results from "./results";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 const router = createBrowserRouter([
   {

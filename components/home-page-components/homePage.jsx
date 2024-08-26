@@ -26,9 +26,26 @@ import gal2 from "../../public/images/gal2.jpg";
 import gal3 from "../../public/images/gal3.jpg";
 
 import gal4 from "../../public/images/gal4.webp";
+import Slider from "react-slick";
+
 
 const HomePage = () => {
   const navigate = useNavigate();
+  const images = [
+    { url: home1, alt: "Image 1" },
+    { url: gal1, alt: "Image 2" },
+    { url: gal2, alt: "Image 3" },
+  ];
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    
+  };
   const toast = useToast();
   const errorToast = (res, status) => {
     toast({
@@ -52,7 +69,7 @@ const HomePage = () => {
   };
   return (
     <div className=" w-full overflow-hidden">
-      <div
+      {/* <div
         className="  flex  pt-36 pb-20 bg-top bg-no-repeat bg-cover h-94  "
         style={{ backgroundImage: `url(${home1})` }}
       >
@@ -76,66 +93,50 @@ const HomePage = () => {
           >
             Nurturing the hearts and enriching the souls of individuals
           </motion.p>
-          {/* <motion.div
-            variants={animationVariants.fadeLeft}
-            id="search-inp"
-            className="max-w-xl max-lg:mx-auto max-lg:w-full relative"
-          >
-            <FaPeriscope className="text-red-500 text-2xl absolute left-2 top-5 " />
-            <input
-              placeholder="Search..."
-              onKeyDown={(e) => {
-                if (e.key === "Enter") {
-                  handleSearch();
-                }
-              }}
-              autoComplete="off"
-              id="searchInp"
-              className="w-full py-5 pl-10 pr-32 text-black rounded-md focus:outline-none"
-              type="text"
-            />
-            <Button
-              content={"Search"}
-              fontSize={"text-xl"}
-              padding={"px-5  py-2"}
-              furtherClasses={"absolute right-2"}
-              styles={{ top: 9.5 }}
-              onClick={handleSearch}
-            />
-          </motion.div> */}
-          <motion.div
-            variants={animationVariants.fadeLeft}
-            className="flex max-lg:flex-col max-lg:items-center gap-10 w-full justify-between items-end mt-4"
-          >
-            <div className="flex gap-12">
-              {/* <div className="flex flex-col text-black gap-4">
-                <h2 className="text-4xl title-font font-bold">19K+</h2>
-                <p className="text-lg">Premium Cares</p>
-              </div> */}
-              {/* <div className="flex flex-col gap-4">
-                <h2 className="text-4xl title-font font-bold">5000+</h2>
-                <p className="text-lg">Premium houses</p>
-              </div> */}
-            </div>
-            {/* <div className="flex gap-12 max-sm:flex-wrap  justify-center">
-              <div className="flex justify-start items-center gap-2">
-                <img className="w-9" src="/grafton.png" alt="img" />
-                <h2 className="text-2xl">Grafton</h2>
-              </div>
-              <div className="flex justify-start items-center gap-2">
-                <img className="w-9" src="/lighthouse.png" alt="img" />
-                <h2 className="text-2xl">Lighthouse</h2>
-              </div>
-              <div className="flex justify-start items-center gap-2">
-                <img className="w-9" src="/tundratown.png" alt="img" />
-                <h2 className="text-2xl">Tundratown</h2>
-              </div>
-            </div> */}
-          </motion.div>
+          
+         
         </motion.div>
 
-        {/* </Reveal> */}
-      </div>
+      </div> */}
+        <div className="flex pt-36 pb-20 bg-top bg-no-repeat bg-cover h-34">
+      <Slider {...settings} style={{ width: "100%" }}>
+        {images.map((image, index) => (
+          <div key={index}>
+            <div
+              className="h-94 flex justify-center items-center"
+              style={{
+                backgroundImage: `url(${image.url})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                height: "600px",
+              }}
+            >
+              <motion.div
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ staggerChildren: 0.2 }}
+                style={{ maxWidth: 1200 }}
+                className="mx-auto w-full text-white px-10 max-sm:px-5 flex flex-col max-lg:items-center max-lg:text-center gap-12"
+              >
+                <motion.h1
+                  variants={animationVariants.fadeLeft}
+                  className="text-6xl max-lg:mx-auto  font-semibold max-sm:text-4xl max-w-lg "
+                >
+                  Mental Wellness Heaven
+                </motion.h1>
+                <motion.p
+                  variants={animationVariants.fadeLeft}
+                  className="text-xl max-lg:mx-auto max-w-md"
+                >
+                  Nurturing the hearts and enriching the souls of individuals
+                </motion.p>
+              </motion.div>
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </div>
       {/* about section */}
       <div>
         <div
