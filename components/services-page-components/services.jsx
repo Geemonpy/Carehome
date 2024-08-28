@@ -4,6 +4,22 @@ import { servicesData } from "../../constants/servicesData";
 import { motion } from "framer-motion";
 import { animationVariants } from "../../constants/animationVariants";
 import serviceimg from "../../public/images/black2.jpg";
+import community from '../../public/icons/service/community_support.png'
+import church from '../../public/icons/service/church.png'
+import gym from '../../public/icons/service/workout.png'
+import shopping from '../../public/icons/service/shopping.png'
+import travel from '../../public/icons/service/travel.png'
+import beauty from '../../public/icons/service/beauty.png'
+import family from '../../public/icons/service/family.png'
+import threapy from '../../public/icons/service/threapy.png'
+
+import aa from '../../public/icons/service/aa.png'
+import counc from '../../public/icons/service/counc.png'
+// import aa from '../../public/icons/service/aa.png'
+
+
+
+
 const ServicesComponent = () => {
   return (
     <>
@@ -42,139 +58,97 @@ const ServicesComponent = () => {
           {/* </div> */}
         </motion.div>
       </div>
-      <div
-        style={{ maxWidth: 1200 }}
-        className="mx-auto grid grid-cols-2 max-md:grid-rows-2  max-md:grid-cols-1 grid-rows-2 p-10 max-lg:px-5 gap-1 "
-      >
-        {/* {servicesData.map((e, i) => {
-          return (
-            <ServiceCard
-              key={i}
-              title={e.title}
-              brief={e.shortDescription}
-              imgSrc={e.image}
-              id={e.id}
-              iconSrc={e.icon}
-            />
-          );
-        })} */}
-        <ServiceCard
-          key={1}
-          title={"Community Support"}
-          brief={
-            "Our supportive community promotes social interaction, peer support, and a sense of belonging, empowering residents on their recovery journey."
-          }
-          imgSrc={
-            "https://files.cdn-files-a.com/uploads/9435802/400_668d11796fd24.jpg"
-          }
-          id={1}
-          //  iconSrc={e.icon}
-        />
-        <ServiceCard
-          key={2}
-          title={"Therapy Sessions"}
-          brief={
-            "We offer a variety of therapy sessions, including cognitive-behavioral therapy, group therapy, and art therapy, aimed at nurturing mental well-being."
-          }
-          imgSrc={
-            "	https://files.cdn-files-a.com/uploads/9435802/400_668d1177c93bc.jpg"
-          }
-          id={2}
-          //  iconSrc={e.icon}
-        />
-        <ServiceCard
-          key={3}
-          title={"Personalized Care Plans"}
-          brief={
-            "Our team creates individualized care plans to meet the unique needs of each resident, ensuring tailored support and comprehensive care."
-          }
-          imgSrc={
-            "https://static1.s123-cdn-static-a.com/uploads/2031/400_57d14bd1c7c33.jpg"
-          }
-          id={3}
-          //  iconSrc={e.icon}
-        />
-        {/* <motion.div
-          initial="initial"
-          whileInView="animate"
-          variants={animationVariants.fadeUp}
-          viewport={{ once: true, amount: 0.2 }}
-          style={{ height: 600 }}
-          className="service-card w-full relative"
-        >
-          <div className="w-full h-full absolute bg-red-500 shadow-lg rounded-xl"></div>
-          <div className=" px-4 w-full h-full absolute text-white bg-red-500 transition-all shadow-lg rounded-xl duration-500 flex flex-col justify-center items-center gap-2">
-            <h2 className=" text-3xl title-font font-semibold  transition-all duration-200">
-              {"DEMENTIA CARE"}
-            </h2>
-            <p className=" text-xl mt-5 max-w-md text-center scale-y-100 opacity-100 transition-all duration-75 origin-top">
-              our team of highly trained and experienced professionals excels in
-              dementia care, employing evidence-based approaches and advanced
-              methodologies to address the complex needs associated with
-              dementia. Our expertise in cognitive support and behavioral
-              management allows us to deliver individualized care plans that
-              effectively enhance residents' quality of life.
-              <br />
-              We are committed to a person-centered care model, meticulously
-              assessing and respecting each individual’s cognitive abilities and
-              personal preferences. At Rosemanor, we cultivate a secure,
-              therapeutic environment that supports mental and emotional
-              well-being, ensuring that each day is meaningful and enriching
-              through targeted interventions and compassionate care strategies.
-            </p>
-          </div>
-        </motion.div>
-        <motion.div
-          initial="initial"
-          whileInView="animate"
-          variants={animationVariants.fadeUp}
-          viewport={{ once: true, amount: 0.2 }}
-          style={{ height: 600 }}
-          className="service-card w-full relative"
-        >
-          <div className="w-full h-full absolute bg-red-500 shadow-lg rounded-xl"></div>
-          <div className=" px-4 w-full h-full absolute text-white bg-red-500 transition-all shadow-lg rounded-xl duration-500 flex flex-col justify-center items-center gap-2">
-            <h2 className=" text-3xl title-font font-semibold  transition-all duration-200">
-              {"Mental Health care"}
-            </h2>
-            <p className=" text-xl mt-5 max-w-md text-center scale-y-100 opacity-100 transition-all duration-75 origin-top">
-              To enhance mental health, we provide a variety of programs
-              tailored to individual needs. Our wellness center features
-              resources for stress management, including guided meditation,
-              fitness classes, and personalized counseling. These initiatives
-              are designed to support emotional balance, promote resilience, and
-              encourage a positive, fulfilling daily experience.
-            </p>
-          </div>
-        </motion.div>
-        <motion.div
-          initial="initial"
-          whileInView="animate"
-          variants={animationVariants.fadeUp}
-          viewport={{ once: true, amount: 0.2 }}
-          style={{ height: 600 }}
-          className="service-card w-full relative"
-        >
-          <div className="w-full h-full absolute bg-red-500 shadow-lg rounded-xl"></div>
-          <div className=" px-4 w-full h-full absolute text-white bg-red-500 transition-all shadow-lg rounded-xl duration-500 flex flex-col justify-center items-center gap-2">
-            <h2 className=" text-3xl title-font font-semibold  transition-all duration-200">
-              {"RESIDENTIAL CARE"}
-            </h2>
-            <p className=" text-xl mt-5 max-w-md text-center scale-y-100 opacity-100 transition-all duration-75 origin-top">
-              At Rosemanor, residents benefit from spacious, elegantly designed
-              rooms that offer a blend of comfort and privacy. Our thoughtfully
-              arranged lounges provide inviting spaces for relaxation and social
-              interaction, fostering a vibrant sense of community.
-              <br />
-              Our dedicated activity room serves as a dynamic center for a
-              diverse array of daily programs. From engaging crafts to
-              stimulating games, it is designed to cater to varied interests,
-              enhancing residents' engagement and enriching their daily
-              experiences.
-            </p>
-          </div>
-        </motion.div> */}
-      </div>
+      
+      {/* <div className="flex w-full gap-10 max-md:flex-col max-md:justify-center max-md:items-center max-md:text-center"> */}
+      <div className="flex w-full mb-8 gap-10 flex-col mt-6 items-center justify-center max-md:items-center">
+  <h1 className="text-5xl font-bold title-font text-gray-800">Community Support</h1>
+</div>
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 items-center justify-center max-md:items-center">
+  <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+    <img src={church} alt="" width={60} className="mb-4"/>
+    <h2 className="text-4xl text-center text-red-500 font-semibold">Church Services</h2>
+  </div>
+  <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+    <img src={gym} alt="" width={60} className="mb-4"/>
+    <h2 className="text-4xl text-center text-red-500 font-semibold">Fitness Programs</h2>
+  </div>
+  <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+    <img src={shopping} alt="" width={60} className="mb-4"/>
+    <h2 className="text-4xl text-center text-red-500 font-semibold">Shopping Assistance</h2>
+  </div>
+  <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+    <img src={travel} alt="" width={60} className="mb-4"/>
+    <h2 className="text-4xl text-center text-red-500 font-semibold">Outings and Trips</h2>
+  </div>
+  <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+    <img src={beauty} alt="" width={60} className="mb-4"/>
+    <h2 className="text-4xl text-center text-red-500 font-semibold">Beauty and Personal Care</h2>
+  </div>
+  <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+    <img src={family} alt="" width={60} className="mb-4"/>
+    <h2 className="text-4xl text-center text-red-500 font-semibold">Family Involvement</h2>
+  </div>
+</div>
+
+<div className="flex w-full mb-8 gap-10 flex-col mt-12 items-center justify-center max-md:items-center">
+  <h1 className="text-5xl font-bold title-font text-gray-800">THERAPY SESSIONS</h1>
+</div>
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 items-center justify-center max-md:items-center">
+  <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+    <img src={threapy} alt="" width={60} className="mb-4"/>
+    <h2 className="text-4xl text-center text-red-500 font-semibold">Therapeutic Sessions</h2>
+  </div>
+  <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+    <img src={aa} alt="" width={60} className="mb-4"/>
+    <h2 className="text-4xl text-center text-red-500 font-semibold">AA Meetings</h2>
+  </div>
+  <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+    <img src={counc} alt="" width={60} className="mb-4"/>
+    <h2 className="text-4xl text-center text-red-500 font-semibold">Counseling Services</h2>
+  </div>
+  <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+    <h2 className="text-6xl">🧠</h2>
+    <h2 className="text-4xl text-center text-red-500 font-semibold mt-4">Psychological Interventions</h2>
+  </div>
+  <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+    <h2 className="text-6xl">🏃‍♂️</h2>
+    <h2 className="text-4xl text-center text-red-500 font-semibold mt-4">Physiotherapy</h2>
+  </div>
+  <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+    <h2 className="text-6xl">👐</h2>
+    <h2 className="text-4xl text-center text-red-500 font-semibold mt-4">Massage Therapy</h2>
+  </div>
+</div>
+
+<div className="flex w-full mb-8 gap-10 flex-col mt-12 items-center justify-center max-md:items-center">
+  <h1 className="text-5xl font-bold title-font text-gray-800">PERSONALISED CARE PLAN</h1>
+</div>
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 items-center justify-center max-md:items-center">
+  <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+    <h2 className="text-6xl">📝</h2>
+    <h2 className="text-4xl text-center text-red-500 font-semibold mt-4">Personalized Care Plans</h2>
+  </div>
+  <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+    <h2 className="text-6xl">🌍</h2>
+    <h2 className="text-4xl text-center text-red-500 font-semibold mt-4">Cultural Needs</h2>
+  </div>
+  <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+    <h2 className="text-6xl">👁️</h2>
+    <h2 className="text-4xl text-center text-red-500 font-semibold mt-4">Visual Assistance</h2>
+  </div>
+  <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+    <h2 className="text-6xl">🗣️</h2>
+    <h2 className="text-4xl text-center text-red-500 font-semibold mt-4">Communication Needs</h2>
+  </div>
+</div>
+
+
+
+
+      {/* </div> */}
     </>
   );
 };
