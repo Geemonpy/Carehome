@@ -61,7 +61,7 @@ const ServicesComponent = () => {
       
       {/* <div className="flex w-full gap-10 max-md:flex-col max-md:justify-center max-md:items-center max-md:text-center"> */}
       <div className="flex w-full mb-8 gap-10 flex-col mt-6 items-center justify-center max-md:items-center">
-  <h1 className="text-5xl font-bold title-font text-gray-800">Community Support</h1>
+  <h1 className="text-5xl font-bold title-font text-gray-800">COMMUNITY SUPPORT</h1>
 </div>
 
 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 items-center justify-center max-md:items-center">
