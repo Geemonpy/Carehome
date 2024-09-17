@@ -17,6 +17,23 @@ import gal6 from "../public/images/gallery/g6.jpg";
 import gal7 from "../public/images/gallery/g7.jpg";
 
 import gal8 from "../public/images/gallery/g8.jpg";
+import img1 from '../public/branches/rosemanor/img1.jpeg'
+import img2 from '../public/branches/rosemanor/img2.jpeg'
+import img3 from '../public/branches/rosemanor/img3.jpeg'
+import img4 from '../public/branches/rosemanor/img4.jpeg'
+import img5 from '../public/branches/rosemanor/img5.jpeg'
+import img6 from '../public/branches/rosemanor1/img1.jpeg'
+import img7 from '../public/branches/rosemanor1/img2.jpeg'
+import img8 from '../public/branches/rosemanor1/img3.jpeg'
+import img9 from '../public/branches/rosemanor1/img4.jpeg'
+import img10 from '../public/branches/rosemanor1/img5.jpeg'
+import img11 from '../public/branches/rosemanor2/img1.jpeg'
+
+import img12 from '../public/branches/rosemanor2/img2.jpeg'
+
+import img13 from '../public/branches/rosemanor2/img3.jpeg'
+
+
 
 // import gal9 from "../public/images/gallery/DSC06584.jpg";
 // import gal10 from "../public/images/gallery/DSC06592.jpg";
@@ -125,6 +142,134 @@ const showcase1 = () => {
               />
             </div>
           </div>
+          
+        </div>
+
+        <div className="flex flex-col gap-5 mt-10 max-sm:mt-8">
+          <div className=" flex gap-5 max-lg:flex-col">
+            <div className="w-2/4 max-lg:w-full">
+              <ExculusivePropertyCard
+                imgSrc={img1}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[0].name}
+                // pricing={rentHouses[0].price}
+                // type={rentHouses[0].type}
+                // href={rentHouses[0].id}
+              />
+            </div>
+            <div className="w-2/4 gap-5 flex max-lg:w-full max-sm:flex-col">
+              <ExculusivePropertyCard
+                imgSrc={img2}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[1].name}
+                // pricing={rentHouses[1].price}
+                // // type={rentHouses[1].type}
+                // href={rentHouses[1].id}
+              />
+              <ExculusivePropertyCard
+                imgSrc={img3}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[2].name}
+                // pricing={rentHouses[2].price}
+                // // type={rentHouses[2].type}
+                // href={rentHouses[2].id}
+              />
+            </div>
+          </div>
+          <div className=" flex gap-5 max-lg:flex-col">
+            <div className="w-2/4 gap-5 flex max-lg:w-full max-sm:flex-col">
+              <ExculusivePropertyCard
+                imgSrc={img4}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[3].name}
+                // pricing={rentHouses[3].price}
+                // // type={rentHouses[3].type}
+                // href={rentHouses[3].id}
+              />
+              <ExculusivePropertyCard
+                imgSrc={img6}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[4].name}
+                // pricing={rentHouses[4].price}
+                // // type={rentHouses[4].type}
+                // href={rentHouses[4].id}
+              />
+            </div>
+            <div className="w-2/4 max-lg:w-full">
+              <ExculusivePropertyCard
+                imgSrc={img7}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[5].name}
+                // pricing={rentHouses[5].price}
+                // // type={rentHouses[5].type}
+                // href={rentHouses[5].id}
+              />
+            </div>
+          </div>
+          
+        </div>
+        <div className="flex flex-col gap-5 mt-10 max-sm:mt-8">
+          <div className=" flex gap-5 max-lg:flex-col">
+            <div className="w-2/4 max-lg:w-full">
+              <ExculusivePropertyCard
+                imgSrc={img8}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[0].name}
+                // pricing={rentHouses[0].price}
+                // type={rentHouses[0].type}
+                // href={rentHouses[0].id}
+              />
+            </div>
+            <div className="w-2/4 gap-5 flex max-lg:w-full max-sm:flex-col">
+              <ExculusivePropertyCard
+                imgSrc={img9}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[1].name}
+                // pricing={rentHouses[1].price}
+                // // type={rentHouses[1].type}
+                // href={rentHouses[1].id}
+              />
+              <ExculusivePropertyCard
+                imgSrc={img10}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[2].name}
+                // pricing={rentHouses[2].price}
+                // // type={rentHouses[2].type}
+                // href={rentHouses[2].id}
+              />
+            </div>
+          </div>
+          <div className=" flex gap-5 max-lg:flex-col">
+            <div className="w-2/4 gap-5 flex max-lg:w-full max-sm:flex-col">
+              <ExculusivePropertyCard
+                imgSrc={img11}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[3].name}
+                // pricing={rentHouses[3].price}
+                // // type={rentHouses[3].type}
+                // href={rentHouses[3].id}
+              />
+              <ExculusivePropertyCard
+                imgSrc={img12}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[4].name}
+                // pricing={rentHouses[4].price}
+                // // type={rentHouses[4].type}
+                // href={rentHouses[4].id}
+              />
+            </div>
+            <div className="w-2/4 max-lg:w-full">
+              <ExculusivePropertyCard
+                imgSrc={img13}
+                // titlePart1={"House in "}
+                // titlePart2={rentHouses[5].name}
+                // pricing={rentHouses[5].price}
+                // // type={rentHouses[5].type}
+                // href={rentHouses[5].id}
+              />
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
