@@ -7,16 +7,16 @@ export const showCase = [
       "Each resident receives a customized care plan tailored to their unique needs, ensuring they receive the best possible support.",
     description:
       "Karachi: Karachi is the largest and most populous city in Pakistan, located on the southern coast of the country. It is known as the financial and economic hub of Pakistan, with a bustling metropolitan atmosphere. Karachi is home to a diverse population, vibrant markets, and a lively food scene. It also boasts beautiful beaches along the Arabian Sea, historical landmarks, and a thriving arts and entertainment scene.",
-    coverImage: "/images/carehomeimage1.JPG",
+    coverImage: "/branches/rosemanor/br1_ci.jpg",
     moreImages: [
-      "/branches/rosemanor/img1.jpg",
-      "/branches/rosemanor/img2.jpg",
-      "/branches/rosemanor/img3.jpg",
-      "/branches/rosemanor/img4.jpg",
-      "/branches/rosemanor/img5.jpg",
-      "/branches/rosemanor/img6.jpg",
-      "/branches/rosemanor/img7.jpg",
-      "/branches/rosemanor/img8.jpg",
+      "/branches/rosemanor/img1.jpeg",
+      "/branches/rosemanor/img2.jpeg",
+      "/branches/rosemanor/img3.jpeg",
+      "/branches/rosemanor/img4.jpeg",
+      "/branches/rosemanor/img5.jpeg",
+      "/branches/rosemanor/br1_ci.jpg",
+      // "/branches/rosemanor/img7.jpg",
+      // "/branches/rosemanor/img8.jpg",
 
      
     ],
@@ -31,15 +31,15 @@ export const showCase = [
       "Each resident receives a customized care plan tailored to their unique needs, ensuring they receive the best possible support.",
     description:
       "Islamabad: Islamabad is the capital city of Pakistan, nestled in the Margalla Hills in the northern part of the country. It is a modern and planned city, known for its wide, tree-lined avenues, spacious parks, and serene beauty. Islamabad is home to the country's government institutions, diplomatic enclaves, and a growing technology and business sector. The city also offers a range of recreational activities, including hiking trails, golf courses, and cultural festivals.",
-    coverImage: "/images/b2.jpeg",
+    coverImage: "/branches/rosemanor1/home2_ci.jpeg",
     moreImages: [
-      "/branches/rosemanor1/b1p1.jpg",
-      "/branches/rosemanor1/b1p2.jpg",
-      "/branches/rosemanor1/b1p3.jpg",
-      "/branches/rosemanor1/b1p4.jpg",
-      "/branches/rosemanor1/b1p5.jpg",
-      "/branches/rosemanor1/b1p6.jpg",
-      "/branches/rosemanor1/b1p7.jpg",
+      "/branches/rosemanor1/img1.jpeg",
+      "/branches/rosemanor1/img2.jpeg",
+
+      "/branches/rosemanor1/img3.jpeg",
+      "/branches/rosemanor1/img4.jpeg",
+      "/branches/rosemanor1/img5.jpeg",
+
 
       // "/branches/branch2/b2p6.jpg",
     ],
@@ -56,20 +56,12 @@ export const showCase = [
       "Lahore: Lahore is the cultural capital of Pakistan, situated in the eastern province of Punjab. It is renowned for its rich history, Mughal-era architecture, and vibrant traditions. Lahore is home to many historical sites, including the iconic Badshahi Mosque and Lahore Fort. The city is also known for its love of arts, literature, and music, with numerous festivals and cultural events taking place throughout the year.",
     coverImage: "/images/b3.jpeg",
     moreImages: [
-      "/branches/rosemanor2/p1.jpg",
-      "/branches/rosemanor2/p2.jpg",
-      "/branches/rosemanor2/p3.jpg",
-      "/branches/rosemanor2/p4.jpg",
-      "/branches/rosemanor2/p5.jpg",
-      "/branches/rosemanor2/p6.jpg",
-      "/branches/rosemanor2/p7.jpg",
-      "/branches/rosemanor2/p8.jpg",
-      "/branches/rosemanor2/p9.jpg",
-      "/branches/rosemanor2/p10.jpg",
-      "/branches/rosemanor2/p11.jpg",
-      "/branches/rosemanor2/p12.jpg",
-      "/branches/rosemanor2/p13.jpg",
-      "/branches/rosemanor2/p14.jpg",
+      "/branches/rosemanor2/img1.jpeg",
+      "/branches/rosemanor2/img2.jpeg",
+      "/branches/rosemanor2/img3.jpeg",
+      "/branches/rosemanor2/img4.jpeg",
+      "/branches/rosemanor2/img5.jpeg",
+    
 
 
 

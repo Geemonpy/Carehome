@@ -28,13 +28,19 @@ import gal3 from "../../public/images/gal3.jpg";
 import gal4 from "../../public/images/gal4.webp";
 import Slider from "react-slick";
 
+import careo2 from "../../public/careousal/handimg.jpg";
+import careo3 from "../../public/careousal/helpimg.jpg";
+import home_cov1 from "../../public/branches/rosemanor/br1_ci.jpg";
+
+
+
 
 const HomePage = () => {
   const navigate = useNavigate();
   const images = [
     { url: home1, alt: "Image 1" },
-    { url: gal1, alt: "Image 2" },
-    { url: gal2, alt: "Image 3" },
+    { url: careo2, alt: "Image 2" },
+    { url: careo3, alt: "Image 3" },
   ];
   const settings = {
     dots: true,
@@ -98,7 +104,36 @@ const HomePage = () => {
         </motion.div>
 
       </div> */}
-        <div className="flex pt-36 pb-20 bg-top bg-no-repeat bg-cover h-34">
+      <div
+        className="  flex  bg-top bg-no-repeat bg-cover h-94  "
+        // style={{ backgroundImage: `url(${home1})` }}
+      >
+        {/* <motion.div
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ staggerChildren: 0.2 }}
+          style={{ maxWidth: 1200 }}
+          className="mx-auto w-full text-white px-10 max-sm:px-5 flex flex-col max-lg:items-center max-lg:text-center gap-12"
+        >
+          <motion.h1
+            variants={animationVariants.fadeLeft}
+            className="text-6xl max-lg:mx-auto  font-semibold max-sm:text-4xl max-w-lg "
+          >
+            Mental Wellness Heaven
+          </motion.h1>
+          <motion.p
+            variants={animationVariants.fadeLeft}
+            className="text-xl max-lg:mx-auto max-w-md  "
+          >
+            Nurturing the hearts and enriching the souls of individuals
+          </motion.p>
+          
+         
+        </motion.div> */}
+
+      </div>
+        <div className="flex  pb-20 bg-top bg-no-repeat bg-cover h-34">
       <Slider {...settings} style={{ width: "100%" }}>
         {images.map((image, index) => (
           <div key={index}>
